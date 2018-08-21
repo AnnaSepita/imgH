@@ -10,6 +10,7 @@ import { OrderModule } from 'ngx-order-pipe';
 import { EditComponent } from './pages/edit/edit.component';
 import { SelectKioskComponent } from './pages/select-kiosk/select-kiosk.component';
 import { CustomComponent } from './pages/custom/custom.component';
+import { SelectTabletComponent } from './pages/select-tablet/select-tablet.component';
 
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     { path: 'myQuotes', component:  NewQuoteComponent },
     { path: 'edit', component: EditComponent },
     { path: 'selectKiosk', component: SelectKioskComponent},
-    { path: 'custom', component: CustomComponent}
+    { path: 'custom', component: CustomComponent},
+    { path: 'selectTablet', component: SelectTabletComponent}
 ];
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     NewQuoteComponent,
     EditComponent,
     SelectKioskComponent,
-    CustomComponent
+    CustomComponent,
+    SelectTabletComponent
   ],
   imports: [
     BrowserModule,
