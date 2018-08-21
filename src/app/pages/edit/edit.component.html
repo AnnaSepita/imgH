@@ -1,0 +1,65 @@
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+
+
+
+<div class="dashboard">
+  <h3>Edit Details</h3>
+  <div class="buttons">
+    <div class="card" style="width: 38rem;">
+      <div class="card-body">
+        <h5 class="card-title">Customer information</h5>
+        <table>
+          <tr class="card-text">
+            <td>Client name:</td>
+            <td> <input type="text" class="input"></td>
+          </tr>
+          <tr class="card-text">
+            <td>Company name:</td>
+            <td> <input type="text" class="input"></td>
+          </tr>
+          <tr class="card-text">
+            <td>Contact number:</td>
+            <td> <input type="text" class="input"></td>
+          </tr>
+          <tr class="card-text">
+            <td>Email:</td>
+            <td> <input type="text" class="input"></td>
+          </tr>
+        </table>
+        <p class="plus" routerLink="/myQuotes"><i class="far fa-save"></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+

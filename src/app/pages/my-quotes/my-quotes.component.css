@@ -1,0 +1,169 @@
+/*header*/
+header{
+    display: inline;
+    padding-left: 50px;
+}
+.form-inline,.mr-sm-2{
+    float: right;
+}
+.nav{
+    /*padding-left: 50px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 2px solid lightgray;
+}
+.my-4{
+    width: 80%;
+
+}
+.btn-sm{
+    background-color: #3194c5;
+    margin-left: 15px;
+    font-size: 11px;
+}
+.my-lg-0{
+    margin-left: 26%;
+}
+.img{
+    background: url("../../../img/1.png");
+    width: 160px;
+    height: 39px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+.form-inline{
+    display: block;
+    /*margin-left: 22.7%;*/
+    float: right;
+
+}
+.nav-item{
+    margin-top: 40px;
+}
+input{
+    /*width: 500px;*/
+}
+.mr-sm-2{
+    /*margin-left: 90%;*/
+    /*float: right;*/
+    height: 25px;
+    width: 400px;
+    /*margin-top: 42px;*/
+    border-radius: 8px;
+    font-style: italic;
+    /*color: #e0e0e0;*/
+    font-size: 11px;
+}
+input {
+    height: 20px;
+}
+.fa-search::before{
+    color: steelblue;
+
+}
+.fa-search{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    margin-left: -56px;
+    position: relative;
+    z-index: 1;
+    margin-top: 49px;
+    margin-bottom: 5px;
+    color: #003380;
+    float: left;
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+
+i.fas .fa-search + input {
+    float: right;
+    color: #003380;
+    padding-left: 46px;
+}
+
+
+/*my quotes page*/
+
+.dashboard{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h3{
+    font-weight: 700;
+    color: #266d99;
+
+}
+.fa-save{
+    /*margin-left: 14%;*/
+    background-color:#3693bc ;
+    color: white;
+    padding: 8px;
+    font-size: 35px;
+    border-radius: 30px;
+    box-shadow: 2px 2px #266d99;
+
+}
+p{
+    margin-left: 14%;
+}
+.card{
+    margin-left: 14%;
+    border-radius: 0;
+}
+.fa-plus{
+    margin-top: 0.7%;
+
+    background-color:#3693bc ;
+    color: white;
+    padding: 8px;
+    font-size: 35px;
+    border-radius: 30px;
+    box-shadow: 2px 2px #266d99;
+
+}
+.newQuote{
+    margin-top: 4%;
+    font-size: 18px;
+}
+.card-title{
+    color: #266d99;
+    margin-left: 10%;
+    font-weight: 700;
+}
+table{
+    margin-left: 18%;
+}
+.buttons{
+    margin-top: 2.3%;
+}
+.quote{  color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+.input{
+    border-radius: 8px;
+    border: 1px solid grey;
+    margin-top: 3%;
+    height: 25px;
+    margin-left: 25%;
+    /*float: right;*/
+}
+.plus{
+
+    margin-top: 4%;
+}
+.fa-plus{
+    margin-top: 1%;
+    float: right;
+}
+a{
+}
+a:hover{
+    text-decoration: none;
+}

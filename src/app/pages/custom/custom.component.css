@@ -1,0 +1,169 @@
+/*header*/
+header{
+    display: inline;
+    padding-left: 50px;
+}
+.form-inline,.mr-sm-2{
+    float: right;
+}
+.nav{
+    /*padding-left: 50px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 2px solid lightgray;
+}
+.my-4{
+    width: 80%;
+
+}
+.btn-sm{
+    background-color: #3194c5;
+    margin-left: 15px;
+    font-size: 11px;
+}
+.my-lg-0{
+    margin-left: 26%;
+}
+.img{
+    background: url("../../../img/1.png");
+    width: 160px;
+    height: 39px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+.form-inline{
+    display: block;
+    /*margin-left: 22.7%;*/
+    float: right;
+
+}
+.nav-item{
+    margin-top: 40px;
+}
+input{
+    /*width: 500px;*/
+}
+.mr-sm-2{
+    /*margin-left: 90%;*/
+    /*float: right;*/
+    height: 25px;
+    width: 400px;
+    /*margin-top: 42px;*/
+    border-radius: 8px;
+    font-style: italic;
+    /*color: #e0e0e0;*/
+    font-size: 11px;
+}
+input {
+    height: 20px;
+}
+.fa-search::before{
+    color: steelblue;
+
+}
+.fa-search{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    /*margin-left: -56px;*/
+    position: relative;
+    z-index: 1;
+    margin-top: 49px;
+    margin-bottom: 5px;
+    color: #003380;
+    float: left;
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+
+i.fas .fa-search + input {
+    float: right;
+    color: #003380;
+    padding-left: 46px;
+}
+
+/*page*/
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h2{
+    font-weight: 800;
+    color: #266d99;
+    padding-top: 5%;
+    /*margin-top: 10%;*/
+}
+.kiosk{
+    margin-top: 5%;
+}
+.oblig{
+    color: red;
+}
+.body{
+    padding-left: 5%;
+}
+.kiosk{
+    width: 77%;
+}
+table{
+    width: 100%;
+
+}
+.suggest{
+    float: right;
+    font-size: 18px;
+    /*font-weight: 700;*/
+}
+.card{
+    float: right;
+    margin-top: 20px;
+    border: none;
+}
+.btn1{
+    background: white;
+    color: #3693bc;
+    border-color: lightgrey;
+    float: right;
+    font-size: 13px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+.title{
+    color:  #3693bc;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+}
+.btn-block{
+    width: 90%;
+    height: 30px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 10px;
+}
+.body{
+    padding: 5px;
+    font-weight: 700;
+    border: 1px solid lightgrey;
+}
+.card-title{
+    color: #3293c3;
+    font-size: 18px;
+    font-weight: 700;
+}
+.data{
+    float: right;
+    display: block;
+}
+.name{
+    text-align: right;
+    line-height:6px;
+}
+.name{
+    color: #3693bc;
+}

@@ -1,0 +1,123 @@
+
+form{
+    width: 65%;
+
+    border: 2px solid lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+}
+.login{
+    margin-top: 3.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h3{
+    font-weight: 700;
+}
+h5{
+    margin-top: 2.8%;
+    font-weight: 700;
+}
+.btn-primary{
+
+    background-color: #3194c5;
+    font-size: 14px;
+    border-radius: 3px;
+    /*border: 1px solid steelblue;*/
+    /*box-shadow: 0 3px 0 0 #003380;*/
+}
+.my-4{
+    /*width: 40%;*/
+    margin-right: 35%;
+    color: lightgrey;
+}
+.form-check-input{
+    margin-top: 1.5%;
+    margin-left: 3%;
+}
+.form-check-label{
+    margin-left: 5.5%;
+}
+.sup{
+    color: red;
+
+}
+.form-check, .btn-link{
+    margin-left: 0;
+    padding-left: 0;
+}
+.img{
+    /*background: url("../img/1.png");*/
+    background: url("../../img/3.png");
+    width: 160px;
+    height: 39px;
+}
+header{
+      margin-left: 10%;
+    display: table;
+    width: 90%;
+    height: 100%;
+
+    /*overflow:  hidden;*/
+}
+.tools{
+    font-size: 14px;
+    font-weight: 800;
+
+}
+.log{
+    width: 80%;
+    margin-top: 26%;
+}
+.form-control,.input-group-prepend, .input-group-text{
+    border-color:#a7d1e6;
+}
+.form-control, input{
+    /*padding: 10px;*/
+    height: 46px;
+    border-left: 0px;
+}
+.input-group-text{
+    background: white;
+    border-right: 0px solid #a7d1e6;
+    line-height: 30px;
+    /*border-right-width: 5px;*/
+}
+.fa-lock-open, .fa-envelope{
+    color:#3194c5;
+    font-size: 12px;
+    padding: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #a7d1e6;
+
+
+}
+.loginInput{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.img2{
+    margin-top: 22%;
+    margin-left: 40%;
+    width: 440px;
+    height: 440px;
+    background: url("../../img/2.png") no-repeat;
+
+}
+img{
+    /*margin-top: 32%;*/
+    /*margin-left: 40%;*/
+}
+#img{
+    height: 107.8%;
+    bottom: 0;
+    background: linear-gradient(to bottom right, #277aa2, #277aa2, #277aa2,#3191c0);
+
+    width: 884px;
+}
+#inp{
+    margin-top: 2%;
+    width: 35%;
+/*float: right;*/
+}

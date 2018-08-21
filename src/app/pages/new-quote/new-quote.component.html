@@ -1,0 +1,107 @@
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+
+<div class="dashboard">
+  <h3>My Quotes</h3>
+  <div>
+    <p class="plus"><i class="fas fa-plus"></i><a  routerLink="/NewQuote">New Quote</a></p>
+    <table>
+      <thead>
+      <tr>
+        <th [class.active]="order === 'date'"
+            (click)="setOrder('date')" class="mdl-data-table__cell--non-numeric1"
+        >Date <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span
+        ><span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+        <th [class.active]="order === 'info.name'"
+            (click)="setOrder('info.name')"
+            class="mdl-data-table__cell--non-numeric"
+        >Client name/Company <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span
+        ><span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+        <th [class.active]="order === 'info.number'"
+            (click)="setOrder('info.number')" class="mdl-data-table__cell--non-numeric"
+        >Ref.No. <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span>
+          <span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+        <th [class.active]="order === 'info.contactNo'"
+            (click)="setOrder('info.contactNo')" class="mdl-data-table__cell--non-numeric"
+        >Contact No. <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span>
+          <span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+
+        <th [class.active]="order === 'info.email'"
+            (click)="setOrder('info.email')"
+            class="mdl-data-table__cell--non-numeric"
+        >Email <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span
+        ><span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+        <th [class.active]="order === 'info.price'" class="mdl-data-table__cell--non-numeric"
+            (click)="setOrder('info.price')"
+        >
+          Price <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span>
+          <span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+
+        <th [class.active]="order === 'info.sent'"  class="mdl-data-table__cell--non-numeric2"
+            (click)="setOrder('info.sent')"
+        >
+          Sent <span [hidden]="reverse"> <i class="fas fa-angle-down"></i></span>
+          <span [hidden]="!reverse"> <i class="fas fa-angle-up"></i></span>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
+        <td>{{ row.date | date : 'shortDate'}}</td>
+        <td>{{ row.info.name }}</td>
+        <td>{{ row.info.number }}</td>
+        <td>{{ row.info.contactNo }}</td>
+        <td>{{ row.info.email }}</td>
+        <td>{{row.info.price}}</td>
+        <!--<td>{{row.info.sent}}</td>-->
+        <td *ngIf="row.info.sent==false"><input type="checkbox" aria-label="" class="checked"></td>
+        <td *ngIf="row.info.sent==true"><input type="checkbox" aria-label="" checked  class="checked"></td>
+        <p class="edit" routerLink="/edit"> edit </p>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
