@@ -95,6 +95,7 @@ i.fas .fa-search + input {
 body{
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 .dhbrd{
 
@@ -213,6 +214,42 @@ h2{
     clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
     -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
 }
+.modal-dialog{
+    border: 1px solid #3693bc;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 290px;
+    height: 450px;
+    left: 40%;
+    top: 25%;
+    background: white;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+
+    -moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
+    /*-webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
+    /*clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
+    /*-moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
+}
+.modal-content{
+    padding-right: 0;
+    border-color: white;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 0px; /* equal to border thickness */
+    left: 20px; /* equal to border thickness */
+    width: 250px; /* container height - (border thickness * 2) */
+    height: 300px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+
+    -moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
+
+}
 .comp{
     border-color: black;
     position: absolute;
@@ -220,11 +257,12 @@ h2{
     font-size: 12px;
     top: 6px; /* equal to border thickness */
     left: 40px; /* equal to border thickness */
-    width: 176px; /* container height - (border thickness * 2) */
+    width: 106px; /* container height - (border thickness * 2) */
     height: 40px; /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
-    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
-    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    -webkit-clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+
+    -moz-clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
 
 }
 .tabl1{
@@ -353,6 +391,10 @@ h2{
     float: right;
     width: 30px;
     margin-left: 20%;
+    border-style:inset;/*outset, или groove, или ridge*/
+    border-width:5px;
+    border-color: #f00;
+    border-radius: 3px;
     background-color: white;
     /*margin-top: 5px;*/
     /*margin-left: 80px;*/
@@ -360,6 +402,17 @@ h2{
 }
 .manufact{
     display: flex;
+}
+.range{
+    width: 80%;
+    height: 2px;
+    background: black;
+    border-color: black;
+    color: black;
+}
+#customRange3{
+    height: 2px;
+    background: black;
 }
 .btn-dark{
     border-radius: 0;
@@ -408,4 +461,176 @@ h2{
      font-size: 18px;
      font-weight: 700;
     padding-left: 46px;
+}
+
+.slidecontainer {
+    margin-left: 15%;
+    width: 65%;
+}
+.slidecontainer1{
+    margin-left: 15%;
+    width: 65%;
+    margin-bottom: 10%;
+}
+.fa-circle{
+    margin-right: 6px;
+}
+.circle1{
+    background:#cb7e7e ;
+    border-radius: 40px;
+}
+
+.circle2{
+    /*border: 1px solid black;*/
+    background:#404040;
+    border-radius: 40px;
+}
+.circle3{
+
+    background:#c9b07e;
+    border-radius: 40px;
+}
+.circle4{
+    background:#ff0000;
+    border-radius: 40px;
+}
+.circle5{
+    background:#003cff;
+    border-radius: 40px;
+}
+.circle6{
+
+    background:black;
+    border-radius: 40px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    border-color: black;
+    background: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:1px solid #3293c3 ;
+    background: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-color: black;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+#demo{
+    color: black;
+}
+.block{
+    display: inline-block;
+}
+table{
+    float: right;
+    width: 75%;
+}
+
+.info{
+    color: white;
+    padding: 1px 11px;
+    margin-top: -5px;
+    margin-left: 5px;
+    border-radius: 30px;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background-color:  #3693bc;
+}
+.priceNew{
+    color: #3293c3;
+    font-style: italic;
+}
+.info:hover{
+    cursor: pointer;
+}
+.tablet{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3293c3;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+.head{
+    /*border: 1px solid black;*/
+}
+.add{
+    background-color: #3194c5;
+    height: 20px;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 0;
+    margin-top: 0;
+}
+.bord{
+    padding-top: 5px;
+    border-bottom: 1px solid #3293c3;
+}
+.btnPadding{
+    border-radius: 0;
+
+    /*width: 50%;*/
+  /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+}
+.btnPadding1{
+    border-radius: 0;
+    float: right;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    /*background-color: white;*/
+    border: none;
+    /*color: #3293c3;*/
+    /*width: 50%;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+}
+.btn2{
+    border-top-right-radius: 10px;
+}
+.btn-light{
+    padding-top: 0;
+    margin-top: 0;
+    background-color: white;
+    border: none;
+    color: #3293c3;
+}
+h5{
+    color: black;
+}
+.accer{
+    padding-top: 20px;
+}
+.desc{
+    color: #3293c3;
+    font-size: 11px;
+    padding-top: 10px;
 }
