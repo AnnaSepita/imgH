@@ -112,7 +112,11 @@ h2{
 }
 table{
     width: 100%;
+    margin-bottom: 5%;
 
+}
+.btn-block{
+    padding-top: 5px;
 }
 .suggest{
     float: right;

@@ -10,6 +10,10 @@ import { OrderModule } from 'ngx-order-pipe';
 import { EditComponent } from './pages/edit/edit.component';
 import { SelectKioskComponent } from './pages/select-kiosk/select-kiosk.component';
 import { CustomComponent } from './pages/custom/custom.component';
+import { FullKioskComponent } from './pages/full-kiosk/full-kiosk.component';
+import { CompactKioskComponent } from './pages/compact-kiosk/compact-kiosk.component';
+import { SelectTabletComponent } from './pages/select-tablet/select-tablet.component';
+import { SelectCustomisationsComponent } from './pages/select-customisations/select-customisations.component';
 
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -18,7 +22,10 @@ const appRoutes: Routes = [
     { path: 'myQuotes', component:  NewQuoteComponent },
     { path: 'edit', component: EditComponent },
     { path: 'selectKiosk', component: SelectKioskComponent},
-    { path: 'custom', component: CustomComponent}
+    { path: 'custom', component: CustomComponent},
+    { path: 'fullKiosk', component: FullKioskComponent},
+    { path: 'selectTablet', component: SelectTabletComponent},
+    { path: 'selectCustomisations', component: SelectCustomisationsComponent}
 ];
 @NgModule({
   declarations: [
@@ -29,7 +36,11 @@ const appRoutes: Routes = [
     NewQuoteComponent,
     EditComponent,
     SelectKioskComponent,
-    CustomComponent
+    CustomComponent,
+    FullKioskComponent,
+    CompactKioskComponent,
+    SelectTabletComponent,
+    SelectCustomisationsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,85 @@
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+<body>
+<!--<span class="dhbrd">-->
+<!--Dashboard-->
+<!--</span>-->
+<!--<span class="menuUp"></span>-->
+<div class="data">
+  <p class="name"><b>John Smith (Burger King)</b></p>
+  <p class="name">Ref: <b>#02154865</b></p>
+  <p class="name">Unit total: <b>$4690</b></p>
+</div>
+<div>Dashboard</div>
+<div>
+  <h2>Select Customisations</h2>
+
+</div>
+
+<div class="kiosk">
+<table>
+  <tr>
+    <td class="name1">Colour</td>
+    <td>
+      <!--<form action="" method="post">-->
+        <!---->
+        <select name="" title="Choose Option">
+          <option hidden disabled value="1" style="color: lightgrey; font-style: italic; font-size: 10px" >Choose Option</option>
+          <option  value="Black / Gold">Black / Gold</option>
+          <option value="Matte Black">Matte Black</option>
+          <option value="White / Silver">White / Silver</option>
+
+        </select>
+        <i class="fas fa-angle-down"></i>
+
+
+    </td>
+  </tr>
+    <tr>
+      <td class="name1">Wifi / Cellular</td>
+    <td>
+      <select name="" title="Choose">
+        <option hidden disabled value="1" selected  style="color: lightgrey; font-style: italic; font-size: 10px">Choose Option</option>
+        <option  value="Black / Gold">Wifi Only</option>
+        <option value="Matte Black">Wifi & Cellular</option>
+
+      </select>
+      <i class="fas fa-angle-down"></i>
+      <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk">Confirm</button>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+</body>

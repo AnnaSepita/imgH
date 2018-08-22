@@ -1,4 +1,8 @@
 /*header*/
+*{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 header{
     display: inline;
     padding-left: 50px;
@@ -67,7 +71,7 @@ input {
     line-height: 26px;
     text-align: center;
     margin-right: -26px;
-    margin-left: -56px;
+    /*margin-left: -56px;*/
     position: relative;
     z-index: 1;
     margin-top: 49px;
@@ -87,87 +91,80 @@ i.fas .fa-search + input {
     padding-left: 46px;
 }
 
-
-/*my quotes page*/
-
-.dashboard{
+/*page*/
+body{
     margin-left: 10%;
     margin-right: 10%;
 }
-h3{
-    font-weight: 700;
+h2{
+    font-weight: 800;
     color: #266d99;
-
+    padding-top: 5%;
+    /*margin-top: 10%;*/
 }
-.fa-save{
-    /*margin-left: 14%;*/
-    background-color:#3693bc ;
-    color: white;
-    padding: 8px;
-    font-size: 35px;
-    border-radius: 30px;
-    box-shadow: 2px 2px #266d99;
-
+.kiosk{
+    margin-top: 5%;
 }
-p{
-    margin-left: 14%;
-}
-.card{
-    margin-left: 14%;
-    border-radius: 0;
-}
-.fa-plus{
-    margin-top: 0.7%;
-
-    background-color:#3693bc ;
-    color: white;
-    padding: 8px;
-    font-size: 35px;
-    border-radius: 30px;
-    box-shadow: 2px 2px #266d99;
-
-}
-.newQuote{
-    margin-top: 4%;
-    /*color: black;*/
-    font-size: 18px;
-}
-.card-title{
-    color: #266d99;
-    margin-left: 10%;
-    font-weight: 700;
-}
-.plus:hover{
-    cursor: pointer;
-}
-table{
-    margin-left: 18%;
-}
-.buttons{
-    margin-top: 2.3%;
-}
-.quote{  color: black;
-    font-weight: 400;
-    font-size: 18px;
-}
-.input{
-    border-radius: 8px;
-    border: 1px solid grey;
-    margin-top: 3%;
-    height: 25px;
-    margin-left: 25%;
-    /*float: right;*/
-}
-.plus{
-
-    margin-top: 4%;
-}
-.fa-plus{
-    margin-top: 1%;
+.data{
     float: right;
+    display: block;
 }
-a{
+.name{
+    text-align: right;
+    line-height:6px;
 }
-a:hover{
-    text-decoration: none;
+.name{
+    color: #3693bc;
 }
+.fa-angle-down{
+    color: #3693bc;
+    font-size: 34px;
+    padding-bottom: 1px;
+
+    border-bottom: 2px solid #3693bc;
+}
+select{
+    border: none;
+    width: 180px;
+    /*color:lightgrey;*/
+    border-bottom: 2px solid #3693bc;
+}
+option[value="1"][disabled]
+{
+    color: #e0e0e0;
+    font-style: italic;
+    font-size: small;
+}
+option{
+    background-color: #3092c3;
+    color: white;
+    border-radius: 9px;
+
+}
+
+table{
+    width: 85%;
+}
+.name1{
+    color: #3693bc;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.choose{
+    font-size: 12px;
+    font-style: italic;
+    color: #e0e0e0;
+}
+.confirm{
+    background-color: #3693bc;
+    margin-left: 12%;
+    height: 29px;
+    padding-top: 0;
+    width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*select option:nth-child(1):after{*/
+    /*color: red;*/
+/*}*/

@@ -87,46 +87,10 @@ i.fas .fa-search + input {
     padding-left: 46px;
 }
 
-/*Kiosk page*/
+/*page*/
 body{
     margin-left: 10%;
     margin-right: 10%;
-}
-
-
-
-.menuUp{
-
-
-
-
-    /*width: 0;*/
-    /*height: 0;*/
-    /*border-top: 10px solid transparent;*/
-    /*border-left: 10px solid white;*/
-    /*border-bottom: 10px solid transparent;*/
-    /*border: 1px solid #3693bc;*/
-    /*padding-right: 45px;*/
-    /*padding-top: 5px;*/
-    /*padding-bottom: 5px;*/
-   /*padding-left: 45px;*/
-    /*border-bottom-left-radius: 8px;*/
-    /*-webkit-transform: rotate(-45deg);*/
-    /*transform: rotate(-45deg);*/
-    /*clip-path: polygon(74% 0, 100% 50%, 74% 100%, 0 100%, 0 0);*/
-
-    /*-webkit-clip-path: polygon(74% 0, 100% 50%, 74% 100%, 0 100%, 0 0);*/
-    /*clip-path: polygon(74% 0, 100% 50%, 74% 100%, 0 100%, 0 0);*/
-    /*border-bottom: 1px solid  #3693bc;*/
-
-    /*-webkit-clip-path: polygon(50% 0%, 50% 100%, 100% 46%);*/
-    /*clip-path: polygon(50% 0%, 50% 100%, 100% 46%);*/
-}
-.dhbrd{
-
-    border-bottom: 1px solid #3693bc;
-    border-left: 1px solid #3693bc;
-    border-top:  1px solid #3693bc;
 }
 h2{
     font-weight: 800;
@@ -136,6 +100,144 @@ h2{
 }
 .kiosk{
     margin-top: 5%;
+}
+.oblig{
+    color: red;
+}
+.body{
+    padding-left: 5%;
+}
+.kiosk{
+    width: 77%;
+}
+table{
+    margin-left: 8%;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+.line{
+    line-height: 10px;
+}
+a .carousel-control-prev{
+    margin: 0;
+    padding: 0;
+}
+.pr{
+    color: #3693bc;
+}
+.editrmv{
+    padding-top: 2px;
+    background: white;
+    line-height: 2px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+.card-header{
+    border: 1px solid lightgrey;
+    font-weight: 700;
+    background: white;
+}
+.card-body{
+    border: 1px solid lightgrey;
+}
+a .gnQuote{
+    float: right;
+}
+.btn-block{
+    padding-top: 3px;
+}
+.blockquote-footer{
+    color: #3693bc;
+    font-size: 12px;
+    padding-left: 10%;
+}
+.bd{
+    border-radius: 12px;
+    border: 2px solid #3693bc;
+    color: #3693bc;
+    background-color: white;
+}
+.card2{
+    border-radius: 10px;
+    border-color: #3693bc;
+}
+.gnQuote{
+    font-weight: 700;
+    font-size: 12px;
+    width: 115px;
+    height: 23px;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    margin-left: 50%;
+    padding-top: 2px;
+}
+.fa-minus, .fa-plus {
+    background-color: #3693bc;
+    color: white;
+    font-size: 11px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    border-radius: 30px;
+}
+.price{
+    padding-left: 50px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13px;
+}
+.card-text{
+
+    font-weight: 700;
+}
+.btn-link{
+    line-height: 4px;
+    font-weight: 700;
+}
+.btn-link:hover{
+    text-decoration: none;
+}
+.suggest{
+    float: right;
+    font-size: 18px;
+    /*font-weight: 700;*/
+}
+.card{
+    float: right;
+    margin-top: 20px;
+    border: none;
+}
+.btn1{
+    background: white;
+    color: #3693bc;
+    border-color: lightgrey;
+    float: right;
+    margin-left: 30%;
+    font-size: 13px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+.title{
+    color:  #3693bc;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+}
+.btn-block{
+    width: 90%;
+    height: 30px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 10px;
+}
+.body{
+    padding: 5px;
+    font-weight: 700;
+
+    border: 1px solid lightgrey;
 }
 .card-title{
     color: #3293c3;
@@ -150,24 +252,15 @@ h2{
     text-align: right;
     line-height:6px;
 }
-
 .name{
     color: #3693bc;
 }
-
-.card{
-
-    width: 100%;
-    border: 5px solid #dcdcdc;
-    border-radius: 0;
-    height: 380px;
+.fa-angle-left, .fa-angle-right{
+    color:  #003380;
+    font-size: 60px;
 }
-.card:hover{
-    cursor: pointer;
-}
-.card-deck{
-
-    width: 103%;
+.carousel-control-prev-icon{
+    color: #3693bc;
 }
 .dashb{
 
@@ -232,5 +325,31 @@ h2{
     -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
 
 }
+.comp1{
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+}
+.comp{
+    border-color: black;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 5px; /* equal to border thickness */
+    left: 40px; /* equal to border thickness */
+    width: 176px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
 
-
+}
