@@ -10,6 +10,154 @@ header{
 .form-inline,.mr-sm-2{
     float: right;
 }
+.dashb{
+
+    /*clip-path: polygon(50% 0%, 0 100%, 100% 100%);*/
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    margin-right: 12px;
+}
+.dashb:hover{
+    cursor: pointer;
+}
+.dashb1{
+    /*border: 1px solid #000000;*/
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 6px; /* equal to border thickness */
+    left: 45px; /* equal to border thickness */
+    width: 176px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
+    clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
+}
+.kiosk1{
+    border: 1px solid white;
+    padding: 0px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+}
+.kiosk1:hover, .comp1:hover, .tabl1:hover, .cust1:hover{
+    cursor: pointer;
+}
+.kiosk2{
+    border-color: black;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 6px; /* equal to border thickness */
+    left: 55px; /* equal to border thickness */
+    width: 176px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+
+}
+.comp{
+    border-color: black;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 6px; /* equal to border thickness */
+    left: 40px; /* equal to border thickness */
+    width: 106px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+
+    -moz-clip-path: polygon(50% 5%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
+
+}
+.comp1{
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+}
+.tabl1{
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+}
+.tabl{
+    border-color: black;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 6px; /* equal to border thickness */
+    left: 55px; /* equal to border thickness */
+    width: 176px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+
+}
+.cust1{
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #3693bc;
+    box-sizing: border-box;
+    margin-right: 12px;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+}
+.cust{
+    border-color: black;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 6px; /* equal to border thickness */
+    left: 55px; /* equal to border thickness */
+    width: 176px; /* container height - (border thickness * 2) */
+    height: 40px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+
+}
 .nav{
     /*padding-left: 50px;*/
     margin-left: 10%;
@@ -117,20 +265,49 @@ h2{
     color: #3693bc;
 }
 .fa-angle-down{
+
     color: #3693bc;
-    font-size: 34px;
+    font-size: 30px;
     padding-bottom: 1px;
 
     border-bottom: 2px solid #3693bc;
 }
+
+.option{
+    padding-right: 130px;
+    /*width: 180px;*/
+    border-bottom: 2px solid #3693bc;
+    padding-bottom: 2px;
+}
+.btn-light{
+    padding: 0;
+    background-color: white;
+}
+.dropdown-menu{
+    width: 230px;
+    margin-top: -45px;
+    background-color: #3293c3;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: #3293c3;
+    cursor: pointer;
+}
+.fa-angle-up{
+    font-size: 28px;
+    float: right;
+}
 select{
     border: none;
-    width: 180px;
+    width: 230px;
     /*color:lightgrey;*/
     border-bottom: 2px solid #3693bc;
 }
 option[value="1"][disabled]
 {
+
     color: #e0e0e0;
     font-style: italic;
     font-size: small;
@@ -139,7 +316,8 @@ option{
     background-color: #3092c3;
     color: white;
     border-radius: 9px;
-
+    width: 250px;
+    margin-top: -50px;
 }
 
 table{
@@ -147,10 +325,13 @@ table{
 }
 .name1{
     color: #3693bc;
+    /*padding-bottom: 10px;*/
     font-size: 20px;
     font-weight: 800;
 }
-
+tr, .confirm{
+    margin-top: 20px;
+}
 .choose{
     font-size: 12px;
     font-style: italic;

@@ -40,41 +40,71 @@
   <p class="name">Ref: <b>#02154865</b></p>
   <p class="name">Unit total: <b>$4690</b></p>
 </div>
-<div>Dashboard</div>
+<div style="padding-top: 20px">
+  <div class="dashb" routerLink="/pages">
+    <div class="dashb1">Dashboard</div>
+
+  </div>
+  <div class="kiosk1" routerLink="/selectKiosk">
+    <div class="kiosk2">Select Kiosk</div>
+  </div>
+  <div class="comp1" routerLink="/fullKiosk">
+    <div class="comp">Select Components</div>
+  </div>
+  <div class="tabl1" routerLink="/selectTablet">
+    <div class="tabl">Select Tablet</div>
+  </div>
+  <div class="cust1">
+    <div class="cust">Customize</div>
+  </div>
+
+</div>
 <div>
   <h2>Select Customisations</h2>
 
 </div>
 
 <div class="kiosk">
+
 <table>
   <tr>
     <td class="name1">Colour</td>
     <td>
-      <!--<form action="" method="post">-->
-        <!---->
-        <select name="" title="Choose Option">
-          <option hidden disabled value="1" style="color: lightgrey; font-style: italic; font-size: 10px" >Choose Option</option>
-          <option  value="Black / Gold">Black / Gold</option>
-          <option value="Matte Black">Matte Black</option>
-          <option value="White / Silver">White / Silver</option>
 
-        </select>
-        <i class="fas fa-angle-down"></i>
-
+      <div class="btn-group">
+        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <!--<a></a>-->
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+          <a class="dropdown-item" style="color: white">Black / Gold</a>
+          <a class="dropdown-item" style="color: white">Matte Black</a>
+          <a class="dropdown-item" style="color: white">White / Silver</a>
+        </div>
+      </div>
 
     </td>
   </tr>
     <tr>
       <td class="name1">Wifi / Cellular</td>
     <td>
-      <select name="" title="Choose">
-        <option hidden disabled value="1" selected  style="color: lightgrey; font-style: italic; font-size: 10px">Choose Option</option>
-        <option  value="Black / Gold">Wifi Only</option>
-        <option value="Matte Black">Wifi & Cellular</option>
+      <div class="btn-group">
+        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <!--<a></a>-->
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+          <a class="dropdown-item" style="color: white">Wifi Only</a>
+          <a class="dropdown-item" style="color: white">Wifi & Cellular</a>
+        </div>
+      </div>
 
-      </select>
-      <i class="fas fa-angle-down"></i>
       <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk">Confirm</button>
     </td>
   </tr>

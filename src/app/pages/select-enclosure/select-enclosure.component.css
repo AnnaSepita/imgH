@@ -1,3 +1,4 @@
+
 /*header*/
 *{
     /*-webkit-appearance: none;*/
@@ -129,14 +130,7 @@ h2{
 .name{
     color: #3693bc;
 }
-.supplying{
-    margin-top: 40px;
-    height: 35px;
-    width: 320px;
-    padding-bottom: 20px;
-    border-bottom: solid #3693bc 1px ;
-    word-spacing: 5px;
-}
+
 .dashb{
 
     /*clip-path: polygon(50% 0%, 0 100%, 100% 100%);*/
@@ -219,17 +213,17 @@ h2{
     padding: 10px;
     position: relative;
     display: inline-block;
-    width: 290px;
-    height: 450px;
+    /*width: 290px;*/
+    /*height: 450px;*/
     left: 40%;
     top: 25%;
-    background: white;
+    /*background: white;*/
     box-sizing: border-box;
-    margin-right: 12px;
-    -webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
-    clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    /*margin-right: 12px;*/
+    /*-webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);*/
+    /*clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);*/
 
-    -moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
+    /*-moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;*/
     /*-webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
     /*clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
     /*-moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
@@ -249,6 +243,17 @@ h2{
 
     /*-moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;*/
 
+}
+.modal-title{
+    text-align: center;
+    color: #3693bc;
+    padding-top: 20px;
+    font-weight: 700;
+}
+.desc{
+    color: #3293c3;
+    font-size: 11px;
+    padding-top: 10px;
 }
 .comp{
     border-color: black;
@@ -432,7 +437,7 @@ h2{
     color: steelblue;
 
 }
- .search2{
+.search2{
     width: 26px;
     height: 26px;
     line-height: 26px;
@@ -453,13 +458,13 @@ h2{
     transform: rotate(90deg);
 }
 
- .search2 + .inp2 {
-     float: left;
+.search2 + .inp2 {
+    float: left;
     color: #003380;
-     border-color: black;
-     border-radius: 0;
-     font-size: 18px;
-     font-weight: 700;
+    border-color: black;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 700;
     padding-left: 46px;
 }
 
@@ -566,10 +571,6 @@ table{
     color: #3293c3;
     font-style: italic;
 }
-.priceNew1{
-    color: #000000;
-    font-style: italic;
-}
 .info:hover{
     cursor: pointer;
 }
@@ -581,7 +582,10 @@ table{
     padding-bottom: 20px;
 }
 .head{
-    /*border: 1px solid black;*/
+    /*border: 1px so
+
+Рома, [27.08.18 15:51]
+lid black;*/
 }
 .add{
     background-color: #3194c5;
@@ -600,7 +604,7 @@ table{
     border-radius: 0;
 
     /*width: 50%;*/
-  /*padding-left: 20px;*/
+    /*padding-left: 20px;*/
     /*padding-right: 20px;*/
 }
 .modal-content{

@@ -14,6 +14,7 @@ import { FullKioskComponent } from './pages/full-kiosk/full-kiosk.component';
 import { CompactKioskComponent } from './pages/compact-kiosk/compact-kiosk.component';
 import { SelectTabletComponent } from './pages/select-tablet/select-tablet.component';
 import { SelectCustomisationsComponent } from './pages/select-customisations/select-customisations.component';
+import { SelectEnclosureComponent } from './pages/select-enclosure/select-enclosure.component';
 
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     { path: 'custom', component: CustomComponent},
     { path: 'fullKiosk', component: FullKioskComponent},
     { path: 'selectTablet', component: SelectTabletComponent},
-    { path: 'selectCustomisations', component: SelectCustomisationsComponent}
+    { path: 'selectCustomisations', component: SelectCustomisationsComponent},
+    { path: 'selectEnclosure', component: SelectEnclosureComponent}
 ];
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     FullKioskComponent,
     CompactKioskComponent,
     SelectTabletComponent,
-    SelectCustomisationsComponent
+    SelectCustomisationsComponent,
+    SelectEnclosureComponent
   ],
   imports: [
     BrowserModule,

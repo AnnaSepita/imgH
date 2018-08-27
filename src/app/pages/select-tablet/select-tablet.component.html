@@ -62,8 +62,13 @@
 
 <div class="supplying">
   <div>Supplying own tablet?
-    <span class="answer">Yes <input class="radio" type="radio">&#160;&#160;  No <input class="radio" type="radio"></span>
+    <span class="answer">Yes <input class="radio" name="yes" type="radio" value="yes" (click)="yes()">
+        &#160;&#160;  No <input class="radio" name="yes" type="radio" value="no" (click)="no()" checked></span>
   </div>
+
+</div>
+<div *ngIf="check==true" style="font-size: 18px">
+    Please select your current model from the list below
 </div>
 <div class="block">
     <div  class="search1">
@@ -161,7 +166,7 @@
     </div>
 
 </div>
-<table>
+<table *ngIf="check==false">
     <tr class="head">
         <td class="tablet">Tablet </td>
         <td class="tablet">Info</td>
@@ -242,6 +247,92 @@
 
         </td>
         <td class="priceNew bord">$133.00</td>
+        <button type="button" class="btn btn-primary add" routerLink="/selectCustomisations">Add</button>
+    </tr>
+</table>
+
+
+<table *ngIf="check==true">
+    <tr class="head">
+        <td class="tablet">Tablet </td>
+        <td class="tablet">Info</td>
+        <td class="tablet">Price</td>
+    </tr>
+    <tr>
+        <td class="bord">OWNER Acer Iconia A200 10.1'' 8GB</td>
+        <td class="bord">
+            <i class="info"  data-toggle="modal" data-target="#exampleModalLong">i</i>
+
+            <div class="modal fade" id="exampleModalLong1" tabindex="-1"
+                 role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!--<div class="modal-header">-->
+                        <h5 class="modal-title" id="exampleModalLongTitle1">
+                            <button type="button" class="btn btn-light btnPadding" (click)="information()">
+                                Information
+                            </button>
+                            <button type="button" class="btn btn-primary btnPadding1" (click)="specifications()">
+                                Specifications
+                            </button>
+                        </h5>
+                        <div *ngIf="specification==true">
+                            <h5 class="accer">OWNER Acer Iconia A200 10.1'' 8GB</h5>
+                            <img width="240px" height="130px">
+                            <p class="desc">Accer Iconia A200 10'' 8GB Tablet</p>
+                        </div>
+                        <div *ngIf="specification==false">
+                            <div class="about">
+                                <p class="line1"><b >Brand:</b>
+                                    <span class="info1">Acer</span>
+                                </p>
+                                <p class="line1"><b>Weight:</b>
+                                    <span class="info1">531 g</span>
+                                </p>
+                                <p class="line1"><b>
+                                    Dimensions:
+                                </b>
+                                    <span class="info1">16.7 x 0.9 x 25.9 cm</span>
+                                </p>
+                                <p class="line1"><b>Screen Size:</b>
+                                    <span class="info1">25.654 cm</span>
+                                </p>
+                                <p class="line1"><b>Screen Resulition:</b>
+                                    <span class="info1">1920 x 1200</span>
+                                </p>
+                                <p class="line1"><b>RAM Size</b>
+                                    <span class="info1">2 Gb</span>
+                                </p>
+                                <p class="line1"><b>Hard Drive Size</b>
+                                    <span class="info1">8 Gb</span>
+                                </p>
+                                <p class="line1"><b>Connectivity Type:</b>
+                                    <span class="info1">WiFi</span>
+                                </p>
+                                <p class="line1"><b>Number of USB Ports:</b>
+                                    <span class="info1">1</span>
+                                </p>
+                                <p class="line1"><b>Number of HDMI Ports:</b>
+                                    <span class="info1">1</span>
+                                </p>
+                                <p class="line1"><b>Buttery Life:</b>
+                                    <span class="info1">9 Hours</span>
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                        <!--<span aria-hidden="true">&times;</span>-->
+                        <!--</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+
+        </td>
+        <td class="priceNew1 bord">$133.00</td>
         <button type="button" class="btn btn-primary add" routerLink="/selectCustomisations">Add</button>
     </tr>
 </table>

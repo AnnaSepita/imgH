@@ -1,0 +1,158 @@
+
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+<body>
+<!--<span class="dhbrd">-->
+<!--Dashboard-->
+<!--</span>-->
+<!--<span class="menuUp"></span>-->
+<div class="data">
+  <p class="name"><b>John Smith (Burger King)</b></p>
+  <p class="name">Ref: <b>#02154865</b></p>
+  <p class="name">Unit total: <b>$4690</b></p>
+</div>
+<div style="padding-top: 20px">
+  <div class="dashb" routerLink="/pages">
+    <div class="dashb1">Dashboard</div>
+
+  </div>
+  <div class="kiosk1" routerLink="/selectKiosk">
+    <div class="kiosk">Select Kiosk</div>
+  </div>
+  <div class="comp1" routerLink="/fullKiosk">
+    <div class="comp">Select Components</div>
+  </div>
+  <div class="tabl1">
+    <div class="tabl">Select Enclosure</div>
+  </div>
+
+  <div>
+    <h2>Select Enclosure Model</h2>
+  </div>
+</div>
+
+
+
+<div class="block">
+  <div  class="search1">
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort by: <i class="fas fa-angle-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item item1" style="color: white">Sort by: <i class="fas fa-angle-up"></i></a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Price: High to Low</a>
+        <a class="dropdown-item" href="#">Price: Low to High</a>
+      </div>
+    </div>
+  </div>
+  <!--<form>-->
+  <!--<input class="search" type="search" title="Search"-->
+  <!--placeholder="Search" aria-label="Search">-->
+
+  <!--</form>-->
+  <div>
+    <form style="width: 250px">
+      <p>
+        <i class="fas fa-search search2"  aria-hidden="true"></i>
+        <input class="form-control  inp2" type="search" title="Search..." placeholder="Search..." aria-label="Search">
+
+      </p>
+    </form>
+  </div>
+
+
+  <div class="filter">
+    <p class="yourfilters">  &#160;Your Filters: </p>
+    <p class="manufacturer">  &#160;Type</p>
+    <ul>
+
+      <div class="manufact"> <p class="manufactur">Core</p>  <input class="chebox" type="checkbox"></div>
+      <div class="manufact"> <p class="manufactur">Expo </p><input class="chebox" type="checkbox" ></div>
+      <div class="manufact"><p class="manufactur">Integrator </p><input class="chebox" type="checkbox" ></div>
+      <div class="manufact"> <p class="manufactur">Loxo</p><input class="chebox" type="checkbox"></div>
+      <div class="manufact"> <p class="manufactur">Shell </p><input class="chebox" type="checkbox"></div>
+      <div class="manufact"><p class="manufactur">Slimline</p> <input class="chebox" type="checkbox"></div>
+    </ul>
+    <p class="manufacturer">  &#160;Tablet Dimensions</p>
+
+    <div class="manufact">
+      <div class="slidecontainer">
+
+        <input title="Range" type="range" min="8" max="20" value="8" class="slider" id="myRange">
+        <p> <span id="demo">''</span></p>
+      </div>
+      <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
+    </div>
+
+
+    <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
+  </div>
+
+</div>
+
+
+<table>
+  <tr class="head">
+    <td class="tablet">Model </td>
+    <td class="tablet">Info</td>
+    <td class="tablet">Price</td>
+  </tr>
+  <tr>
+    <td class="bord">Shell+ 12</td>
+    <td class="bord">
+      <i class="info"  data-toggle="modal" data-target="#exampleModal">i</i>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!--<div class="modal-header">-->
+              <h5 class="modal-title" id="exampleModalLabel">Shell+ 12</h5>
+
+            <!--</div>-->
+            <div class="modal-body">
+              <img src=""  width="240px" height="130px">
+              <p class="desc">Shell+ 12 IPad or tablet secure kiosk mount is ideal for slightly bigger tablets, which displays clear information with a larger font size and graphics for easy accessibility and viewability. </p>
+              <p style="color: #3293c3"><b>Product code: 017_12_120-45</b></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </td>
+    <td class="priceNew bord">$333.00</td>
+    <button type="button" class="btn btn-primary add" routerLink="/fullKiosk">Add</button>
+  </tr>
+</table>
+</body>

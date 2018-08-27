@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectTabletComponent implements OnInit {
     specification: boolean;
+    check: boolean;
   constructor() {
     this.specification = true;
+    this.check = false;
   }
 
   ngOnInit() {
@@ -22,5 +24,11 @@ export class SelectTabletComponent implements OnInit {
       this.specification = true;
       // document.getElementById('card1').style.display = 'block';
   }
+    yes() {
+        this.check = true;
+    }
+    no() {
+        this.check = false;
+    }
 
 }
