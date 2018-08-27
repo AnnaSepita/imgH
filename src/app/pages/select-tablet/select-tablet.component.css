@@ -242,12 +242,12 @@ h2{
     font-size: 12px;
     top: 0px; /* equal to border thickness */
     left: 20px; /* equal to border thickness */
-    width: 250px; /* container height - (border thickness * 2) */
+    width: 280px; /* container height - (border thickness * 2) */
     height: 300px; /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
-    clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+    /*-webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);*/
+    /*clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);*/
 
-    -moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;
+    /*-moz-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0) ;*/
 
 }
 .comp{
@@ -599,13 +599,41 @@ table{
   /*padding-left: 20px;*/
     /*padding-right: 20px;*/
 }
+.modal-content{
+    padding: 0;
+    margin: 0;
+}
+.about{
+    padding-top: 35%;
+    color: white;
+    margin-left: -20px;
+    font-size: 12px;
+    background-color: #3693c1;
+    padding-left: 15%;
+    padding-bottom: 15%;
+}
+.info1{
+    float: right;
+    line-height: 9px;
+    padding-right: 20%;
+    text-align: left;
+}
+.line1{
+    line-height: 9px;
+    border-bottom: 5px;
+}
 .btnPadding1{
     border-radius: 0;
     float: right;
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 20px;
-    padding-right: 10px;
+    /*padding-top: -90px;*/
+    margin-top: -35px;
+    margin-left: 35px;
+    padding-left: 30px;
+    padding-bottom: 14px;
+    padding-right: 20px;
+    margin-right: 0;
+    width: 156px;
+    background-color: #3693c1;
     /*background-color: white;*/
     border: none;
     /*color: #3293c3;*/

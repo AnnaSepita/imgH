@@ -178,22 +178,64 @@
                     <div class="modal-content">
                         <!--<div class="modal-header">-->
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                <button type="button" class="btn btn-light btnPadding ">Information</button>
-                                <button type="button" class="btn btn-primary btnPadding1 ">Specifications</button>
+                                <button type="button" class="btn btn-light btnPadding" (click)="information()">
+                                    Information
+                                </button>
+                                <button type="button" class="btn btn-primary btnPadding1" (click)="specifications()">
+                                    Specifications
+                                </button>
                             </h5>
-                        <div>
+                        <div id="card1" *ngIf="specification==true">
                             <h5 class="accer">Accer Iconia A200 10'' 8GB</h5>
                             <img width="240px" height="130px">
                             <p class="desc">Accer Iconia A200 10'' 8GB Tablet</p>
                         </div>
+                        <div *ngIf="specification==false">
+                            <div class="about">
+                                    <p class="line1"><b >Brand:</b>
+                                        <span class="info1">Acer</span>
+                                    </p>
+                                <p class="line1"><b>Weight:</b>
+                                    <span class="info1">531 g</span>
+                                </p>
+                                <p class="line1"><b>
+                                    Dimensions:
+                                </b>
+                                    <span class="info1">16.7 x 0.9 x 25.9 cm</span>
+                                </p>
+                                <p class="line1"><b>Screen Size:</b>
+                                    <span class="info1">25.654 cm</span>
+                                </p>
+                                <p class="line1"><b>Screen Resulition:</b>
+                                    <span class="info1">1920 x 1200</span>
+                                </p>
+                                <p class="line1"><b>RAM Size</b>
+                                    <span class="info1">2 Gb</span>
+                                </p>
+                                <p class="line1"><b>Hard Drive Size</b>
+                                    <span class="info1">8 Gb</span>
+                                </p>
+                                <p class="line1"><b>Connectivity Type:</b>
+                                    <span class="info1">WiFi</span>
+                                </p>
+                                <p class="line1"><b>Number of USB Ports:</b>
+                                    <span class="info1">1</span>
+                                </p>
+                                <p class="line1"><b>Number of HDMI Ports:</b>
+                                    <span class="info1">1</span>
+                                </p>
+                                <p class="line1"><b>Buttery Life:</b>
+                                    <span class="info1">9 Hours</span>
+                                </p>
 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        <!--</div>-->
-                        <div class="modal-body">
-                            ...
+
+                            </div>
                         </div>
+
+                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                <!--<span aria-hidden="true">&times;</span>-->
+                            <!--</button>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
