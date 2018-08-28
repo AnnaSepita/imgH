@@ -1,0 +1,180 @@
+
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+<body>
+<!--<span class="dhbrd">-->
+<!--Dashboard-->
+<!--</span>-->
+<!--<span class="menuUp"></span>-->
+<div class="data">
+  <p class="name"><b>John Smith (Burger King)</b></p>
+  <p class="name">Ref: <b>#02154865</b></p>
+  <p class="name">Unit total: <b>$4690</b></p>
+</div>
+<div style="padding-top: 20px">
+  <div class="dashb" routerLink="/pages">
+    <div class="dashb1">Dashboard</div>
+
+  </div>
+  <div class="kiosk1" routerLink="/selectKiosk">
+    <div class="kiosk2">Select Kiosk</div>
+  </div>
+  <div class="comp1" routerLink="/fullKiosk">
+    <div class="comp">Select Components</div>
+  </div>
+  <div class="tabl1">
+    <div class="tabl">Select Enclosure</div>
+  </div>
+  <div class="tabl2">
+    <div class="tab2">Customise</div>
+  </div>
+
+  <div>
+    <h2>Select Customisations</h2>
+  </div>
+</div>
+
+<div class="kiosk">
+
+  <table>
+    <tr>
+      <td class="name1">Basel Material</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white">CORE PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">EXPO PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">INTEGRATOR PRO PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">INTEGRATOR PRO Steel</a>
+            <a class="dropdown-item" style="color: white">LOXO Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">SHELL (upto 12'' PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">SHELL Steel</a>
+            <a class="dropdown-item" style="color: white">SUMLINE Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">SUMLINE PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">SUMLINE Steel</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom PMMA Acrylic</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom Steel</a>
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td class="name1">Colour & Finish</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white">White Standard</a>
+            <a class="dropdown-item" style="color: white">Black Standard</a>
+            <p class="padding" style="margin-top: 10px">
+              <span>Custom ...</span>
+              <span style="float: right">300$</span>
+            </p>
+            <p class="padding">
+              <span style="font-size: 11px; font-style: italic">Her Colour Code</span><br>
+              <span class="color">#000000</span><span class="color2"></span>
+              <span><button type="button" class="btn btn-outline-primary">Confirm</button></span>
+            </p>
+            <!--<a class="dropdown-item" style="color: white">White / Silver</a>-->
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="name1">Custom Bezel Graphics</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td class="name1">Bezel Shape Expo</td>
+      <td>
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk">Confirm</button>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</body>
