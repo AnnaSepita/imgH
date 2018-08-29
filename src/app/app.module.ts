@@ -16,6 +16,8 @@ import { SelectTabletComponent } from './pages/select-tablet/select-tablet.compo
 import { SelectCustomisationsComponent } from './pages/select-customisations/select-customisations.component';
 import { SelectEnclosureComponent } from './pages/select-enclosure/select-enclosure.component';
 import { CustomisationsComponent } from './pages/customisations/customisations.component';
+import { QuoteConfirmationComponent } from './pages/quote-confirmation/quote-confirmation.component';
+import { KioskQuotationComponent } from './pages/kiosk-quotation/kiosk-quotation.component';
 
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     { path: 'selectTablet', component: SelectTabletComponent},
     { path: 'selectCustomisations', component: SelectCustomisationsComponent},
     { path: 'selectEnclosure', component: SelectEnclosureComponent},
-    { path: 'customisations', component: CustomisationsComponent}
+    { path: 'customisations', component: CustomisationsComponent},
+    { path: 'QuoteConfirmation', component: QuoteConfirmationComponent},
+    { path: 'KioskQuotation', component: KioskQuotationComponent}
 ];
 @NgModule({
   declarations: [
@@ -46,7 +50,9 @@ const appRoutes: Routes = [
     SelectTabletComponent,
     SelectCustomisationsComponent,
     SelectEnclosureComponent,
-    CustomisationsComponent
+    CustomisationsComponent,
+    QuoteConfirmationComponent,
+    KioskQuotationComponent
   ],
   imports: [
     BrowserModule,

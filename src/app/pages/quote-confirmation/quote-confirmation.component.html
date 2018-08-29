@@ -1,0 +1,167 @@
+<header>
+  <div class="nav">
+    <span class="img" title="imageHolders"></span>
+    <!--<img src="img/1.png" class="rounded float-left">-->
+    <span class="nav-item">
+      <a class="nav-link active" href="#" title="Home">Home</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
+    </span>
+    <span class="nav-item">
+      <a class="nav-link" href="#" title="New Quote"   routerLink="/NewQuote">New Quote</a>
+    </span>
+    <form class="form-inline my-2 my-lg-0">
+      <p style="font-size: 11px; padding-top: 8px; float: right">
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+      </p>
+      <p>
+        <i class="fas fa-search"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+    <!--<div>-->
+    <!--<i class="fas fa-search" aria-hidden="true"></i>-->
+    <!--<input type="text"  class="form-control mr-sm-2" title="Search" placeholder="Search by reference number or model number" aria-label="Search">-->
+    <!--</div>-->
+  </div>
+
+  <!--<hr class="my-4">-->
+</header>
+<body>
+<!--<span class="dhbrd">-->
+<!--Dashboard-->
+<!--</span>-->
+<!--<span class="menuUp"></span>-->
+<div class="data">
+  <p class="name"><b>John Smith (Burger King)</b></p>
+  <p class="name">Ref: <b>#02154865</b></p>
+  <p class="name">Unit total: <b>$4690</b></p>
+</div>
+<div style="padding-top: 20px">
+  <div class="dashb" routerLink="/pages">
+    <div class="dashb1">Dashboard</div>
+
+  </div>
+  <div class="kiosk1" routerLink="/selectKiosk">
+    <div class="kiosk2">Select Kiosk</div>
+  </div>
+  <div class="comp1" routerLink="/fullKiosk">
+    <div class="comp">Select Components</div>
+  </div>
+  <div class="tabl1">
+    <div class="tabl">Quote Confirmation</div>
+  </div>
+
+
+  <div>
+    <h2>Quote Confirmation</h2>
+    <p>Check all the information is correct</p>
+  </div>
+</div>
+
+<div class="kiosk">
+
+  <div class="row">
+    <div >
+      <div class="card">
+        <table class="card-body width">
+
+          <tr>
+            <td class="card-text1">Client Name:</td>
+            <td class="nm">John Smith</td>
+          </tr>
+          <tr>
+            <td class="card-text1">Client Company:</td>
+            <td class="nm">Burger King</td>
+          </tr>
+
+          <tr>
+            <td class="card-text1">Contact number:</td>
+            <td class="nm">01202 555666</td>
+          </tr>
+          <tr>
+            <td class="card-text1">Email:</td>
+            <td class="nm">JohnSmith@burgerking.com</td>
+          </tr>
+
+          <tr>
+            <td class="card-text1">Reference Number: </td>
+            <td class="nm">#02154865</td>
+          </tr>
+          <tr>
+            <td class="card-text1">Data of quotation:</td>
+            <td class="nm">01/01/2018</td>
+          </tr>
+
+        </table>
+        <div>
+          <p><button type="button" class="btn btn-link editDet">edit details</button></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!--<div class="card">-->
+        <div class="card-body width1">
+
+          <span style="color: #266d99; font-weight: 700">Unit Quantity </span><span class="price"
+          ><i class="fas fa-minus" (click)="minus()"></i>{{count}}<i class="fas fa-plus" (click)="plus()"></i>
+    </span>
+          <div style="margin-top: 25px; margin-left: 20px">
+            <p class="card-text">Unit total: <span class="price1">$2345.00</span></p>
+            <p class="card-text">Sub total: <span class="price2">$2345.00</span></p>
+
+          </div>
+
+
+
+        </div>
+      <!--</div>-->
+    </div>
+  </div>
+
+  <table>
+
+    <tr class="title">
+      <td style="padding-left: 25px">Component</td>
+      <td style="padding-left: 25px">Selection</td>
+      <td style="padding-left: 25px; border-right: 1px solid lightgrey">Price</td>
+    </tr>
+    <tr>
+      <td class="body" style="padding-left: 25px;">Tablet</td>
+
+      <td  class="body">
+        <div >
+
+          <div class="card-body bd">
+            <div class=" head">
+              Acer Iconia A200 10.1' 8GB
+            </div>
+            <blockquote class="blockquote mb-0">
+              <footer class="blockquote-footer"> <cite title="Customisation Selection 1">Customisation Selection 1</cite></footer>
+              <footer class="blockquote-footer"> <cite title="Customisation Selection 2">Customisation Selection 2</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+        <!--<button type="button" class="btn btn-primary btn-lg btn-block">Choose Tablet</button>-->
+      </td>
+      <td  class="body pr" style="padding-left: 25px"  >$567</td>
+      <div style="padding-top: 25%">
+        <p class="editrmv"><button type="button" class="btn btn-link ed">edit</button></p>
+        <p class="editrmv"><button type="button" class="btn btn-link ed">remove</button></p>
+      </div>
+
+    </tr>
+
+
+  </table>
+  <div style="float: right;margin-right: 8%;">
+    <button type="button" class="btn btn-primary export" routerLink="/KioskQuotation">Export PDF</button>
+    <button type="button" class="btn btn-primary save" routerLink="/myQuotes">Save for later</button>
+  </div>
+</div>
+
+</body>
+

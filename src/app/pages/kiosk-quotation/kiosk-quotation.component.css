@@ -1,0 +1,157 @@
+header{
+    display: inline;
+    height: auto;
+    padding-left: 50px;
+}
+.img{
+    background: url("../../../img/1.jpg");
+    height: 46px;
+    width: 196px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+.nav{
+    /*padding-left: 50px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 2px solid lightgray;
+}
+.kiosk {
+    height: 20px;
+    font-size: 16px;
+    padding-top: 56px;
+    float: right;
+    font-weight: 700;
+
+}
+.quo{
+    width: 80%;
+
+}
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+.text{
+    width: 58%;
+}
+
+.summarInfo{
+    border: 1px solid #3293c3;
+    padding: 5px;
+    padding-left: 60px;
+}
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 25px;
+}
+table{
+
+    width: 100%;
+    margin-bottom: 5%;
+
+
+}
+.title{
+    color:  #3693bc;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+}
+.body{
+    padding: 5px;
+    font-weight: 700;
+
+    border: 1px solid lightgrey;
+}
+.bd{
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-left: 25px;
+    border: 2px solid #3693bc;
+    color: #3693bc;
+    background-color: white;
+}
+
+.blockquote-footer{
+    color: #3693bc;
+    font-size: 12px;
+    padding-left: 10%;
+}
+.pr{
+    font-style: italic;
+    color: #3693bc;
+}
+.footer{
+    height: auto;
+    width: 100%;
+    padding-bottom: 40px;
+    background-color:#3192c3;
+}
+.titl{
+    text-align: center;
+    background: url("../../../img/flag.png");
+    width: 50px;
+    margin-left: 32%;
+    height: 40px;
+}
+.titl2{
+    text-align: center;
+    background: url("../../../img/flag1.png");
+    width: 50px;
+    margin-left: 32%;
+    height: 40px;
+}
+.sm{
+    padding-right: 20%;
+    text-align: center;
+}
+.row1{
+    padding-left: 38%;
+    text-align: center;
+    width: 90%;
+    padding-top: 5%;
+}
+.text11{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.text2{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+}
+.row2{
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 90%;
+
+    color: white;
+}
+.title1{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.sm1{
+    width: 45%;
+    margin-left: 20px;
+    /*padding-right: 20%;*/
+    text-align: left;
+}
+.img3{
+    background: url("../../../img/member.png");
+    width: 260px;
+    height: 135px;
+}
+img{
+    margin-top: -105px;
+}
