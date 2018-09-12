@@ -10,9 +10,9 @@
 }
 .img{
     /*background: url("../img/1.png");*/
-    background: url("../../img/3.png");
-    width: 160px;
-    height: 39px;
+    background: url("../../img/1.jpg");
+    width: 258px;
+    height: 60px;
 }
 header{
       margin-left: 10%;
@@ -72,7 +72,7 @@ html{
 #img{
     height: 100%;
     bottom: 0;
-    background: linear-gradient(to bottom right, #277aa2, #277aa2, #277aa2,#3191c0);
+    background: linear-gradient(to bottom right,#277aa2,#277aa2, #277aa2, #277aa2, #277aa2,#3191c0);
     /*padding-bottom: 5%;*/
     width: 70%;
 }

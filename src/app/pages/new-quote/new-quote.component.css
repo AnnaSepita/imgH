@@ -6,10 +6,13 @@ header{
 .form-inline,.mr-sm-2{
     float: right;
 }
+.searchpadd{
+    padding-right: 7.5%;
+}
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
 .my-4{
@@ -22,14 +25,15 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0%;
 }
 .img{
     background: url("../../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
 }
 .form-inline{
     display: block;
@@ -38,7 +42,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 input{
     /*width: 500px;*/
@@ -53,6 +57,9 @@ input{
     font-style: italic;
     /*color: #e0e0e0;*/
     font-size: 11px;
+}
+.width2{
+    width: 300px;
 }
 input {
     height: 20px;
@@ -80,7 +87,10 @@ input {
     -o-transform: rotate(90deg); /* Для Opera */
     transform: rotate(90deg);
 }
-
+.search3{
+    margin-top: 0px;
+    margin-left: -35px;
+}
 i.fas .fa-search + input {
     float: right;
     color: #003380;
@@ -122,11 +132,17 @@ p{
 
     background-color:#3693bc ;
     color: white;
-    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:9px;
+    padding-right: 8px;
     font-size: 35px;
     border-radius: 30px;
     box-shadow: 2px 2px #266d99;
 
+}
+input:focus{
+    padding-left: 30px;
 }
 .newQuote{
     margin-top: 4%;
@@ -139,7 +155,7 @@ p{
 }
 table{
     margin-top: 5%;
-    width: 95%;
+    width: 100%;
     /*margin-left: 18%;*/
 }
 .buttons{
@@ -215,9 +231,14 @@ td{
     border:1px solid lightgrey;
     text-align: center;
     padding: 8px;
+    color: #717171;
+}
+.namecompany:hover{
+    cursor: pointer;
 }
 .edit{
-    padding-top: 20px;
+    line-height: 0px;
+    padding-top: 10px;
     /*margin-top: 50px;*/
    text-align: center;
     color: #3693bc;

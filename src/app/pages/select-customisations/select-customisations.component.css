@@ -160,8 +160,8 @@ header{
 }
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
 .my-4{
@@ -174,14 +174,14 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0;
 }
 .img{
     background: url("../../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
 }
 .form-inline{
     display: block;
@@ -190,7 +190,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 input{
     /*width: 500px;*/
@@ -241,8 +241,8 @@ i.fas .fa-search + input {
 
 /*page*/
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 h2{
     font-weight: 800;
@@ -274,7 +274,7 @@ h2{
 }
 
 .option{
-    padding-right: 130px;
+    padding-right: 190px;
     /*width: 180px;*/
     border-bottom: 2px solid #3693bc;
     padding-bottom: 2px;
@@ -282,6 +282,10 @@ h2{
 .btn-light{
     padding: 0;
     background-color: white;
+    border: none;
+}
+.btn-light:hover{
+    border: none;
 }
 .dropdown-menu{
     width: 230px;
@@ -340,8 +344,8 @@ tr, .confirm{
 .confirm{
     background-color: #3693bc;
     margin-left: 12%;
-    height: 29px;
-    padding-top: 0;
+    height: 35px;
+    padding-top: 3px;
     width: 130px;
     font-size: 18px;
     font-weight: 700;

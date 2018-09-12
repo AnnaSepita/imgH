@@ -9,8 +9,8 @@ header{
 }
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
 .my-4{
@@ -23,14 +23,15 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0;
 }
 .img{
     background: url("../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
+
 }
 .form-inline{
     display: block;
@@ -39,7 +40,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 input{
     /*width: 500px;*/
@@ -90,8 +91,8 @@ i.fas .fa-search + input {
 
 /*dashboard page*/
 .dashboard{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 h3{
     font-weight: 700;
@@ -101,8 +102,12 @@ h3{
     margin-left: 14%;
     background-color:#3693bc ;
     color: white;
-    padding: 8px;
-    font-size: 35px;
+    /*padding: 8px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:9px;
+    padding-right: 8px;
+    font-size: 33px;
     border-radius: 30px;
     box-shadow: 2px 2px #266d99;
 
@@ -112,13 +117,21 @@ h3{
     margin-left: 14%;
     background-color:#3693bc ;
     color: white;
-    padding: 8px;
-    font-size: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:9px;
+    padding-right: 8px;
+    font-size: 33px;
     border-radius: 30px;
+
     box-shadow: 2px 2px #266d99;
 
 }
+input:focus{
+    padding-left: 30px;
+}
 .buttons{
+    width: auto;
     margin-top: 2.3%;
 }
 .quote{
@@ -127,4 +140,7 @@ h3{
 }
 .quote:hover{
     cursor: pointer;
+}
+p:active, p:focus{
+    border: none;
 }

@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -38,7 +38,7 @@
 <div class="data">
   <p class="name"><b>John Smith (Burger King)</b></p>
   <p class="name">Ref: <b>#02154865</b></p>
-  <p class="name">Unit total: <b>$4690</b></p>
+  <p class="name">Unit total: <b>£4690</b></p>
 </div>
 <div style="padding-top: 20px">
   <div class="dashb" routerLink="/pages">
@@ -93,9 +93,9 @@
   <table>
 
     <tr class="title">
-      <td style="padding-left: 25px">Component</td>
-      <td style="padding-left: 25px">Selection</td>
-      <td style="padding-left: 25px">Price</td>
+      <td style=" text-align: center">Component</td>
+      <td style=" text-align: center">Selection</td>
+      <td style=" text-align: center; border-right: 1px solid lightgrey">Price</td>
     </tr>
     <tr>
       <td class="body" style="padding-left: 25px;background: #e0eff6">Tablet <span style="color: red">*</span></td>
@@ -115,8 +115,8 @@
         </div>
         <!--<button type="button" class="btn btn-primary btn-lg btn-block">Choose Tablet</button>-->
       </td>
-      <td  class="body pr" style="padding-left: 25px;background: #e0eff6"  >$567</td>
-      <span class="editrmv"><button type="button" class="btn btn-link">edit</button></span>
+      <td  class="body pr" style="padding-left: 25px;background: #e0eff6"  >£567</td>
+      <span class="editrmv" style="margin-top: 5%"><button type="button" class="btn btn-link" routerLink="/selectTablet">edit</button></span>
       <span class="editrmv"><button type="button" class="btn btn-link">remove</button></span>
     </tr>
     <tr style="background: #e0eff6">
@@ -212,16 +212,16 @@
   <div class="card">
     <div class="card-header">
       Quantity <span class="price"
-    ><i class="fas fa-minus" (click)="minus()"></i>{{count}}<i class="fas fa-plus" (click)="plus()"></i>
+    style="font-style: normal; font-size: 18px"><i class="fas fa-plus" (click)="plus()"></i>{{count}}<i class="fas fa-minus" (click)="minus()"></i>
     </span>
     </div>
     <div class="card-body">
 
-      <p class="card-text">Unit total: <span class="price">$2345.00</span></p>
-      <p class="card-text">Sub total: <span class="price">$2345.00</span></p>
+      <p class="card-text">Unit total: <span class="price">£2345.00</span></p>
+      <p class="card-text">Sub total: <span class="price">£2345.00</span></p>
 
     </div>
-    <a href="#" class="btn btn-primary gnQuote">Generate Quote</a>
+    <a routerLink="/QuoteConfirmation" class="btn btn-primary gnQuote">Generate Quote</a>
   </div>
 
 </div>

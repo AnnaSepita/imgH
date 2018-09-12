@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -35,6 +35,16 @@
   <h3>My Quotes</h3>
   <div>
     <p class="plus"><i class="fas fa-plus"></i><a  routerLink="/NewQuote" style="color: black">New Quote</a></p>
+
+    <form class="form-inline my-2 my-lg-0 searchpadd">
+      <p>
+        <i class="fas fa-search search3"  aria-hidden="true"></i>
+        <input class="form-control mr-sm-2 width2" type="search" title="Search"
+               placeholder="                                             Search by reference number or model number" aria-label="Search">
+
+      </p>
+    </form>
+
     <table>
       <thead>
       <tr>
@@ -88,20 +98,45 @@
       </thead>
       <tbody>
       <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
-        <td>{{ row.date | date : 'shortDate'}}</td>
-        <td>{{ row.info.name }}</td>
+        <td >{{ row.date | date : 'shortDate'}}</td>
+        <td style="color:#7EA9BE;" class="namecompany" routerLink="/fullKiosk">{{ row.info.name }}</td>
         <td>{{ row.info.number }}</td>
         <td>{{ row.info.contactNo }}</td>
         <td>{{ row.info.email }}</td>
-        <td>{{row.info.price}}</td>
+        <td style="font-weight: 600">{{row.info.price}}</td>
         <!--<td>{{row.info.sent}}</td>-->
         <td *ngIf="row.info.sent==false"><input type="checkbox" aria-label="" class="checked"></td>
         <td *ngIf="row.info.sent==true"><input type="checkbox" aria-label="" checked  class="checked"></td>
         <p class="edit" routerLink="/edit"> edit </p>
+        <p class="edit"> duplicate</p>
+      </tr>
+
+      </tbody>
+      <tbody style="border: none">
+      <tr style="border: none">
+        <td style="border: none"></td>
+      </tr>
+      </tbody>
+
+      <tbody>
+      <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
+        <td style="border: 1px solid #FC7476">{{ row.date | date : 'shortDate'}}</td>
+        <td style="color: #BC0D16; border: 1px solid #FC7476">{{ row.info.name }}</td>
+        <td style="border: 1px solid #FC7476">{{ row.info.number }}</td>
+        <td style="border: 1px solid #FC7476">{{ row.info.contactNo }}</td>
+        <td style="border: 1px solid #FC7476">{{ row.info.email }}</td>
+        <td style="border: 1px solid #FC7476">{{row.info.price}}</td>
+        <!--<td>{{row.info.sent}}</td>-->
+        <td *ngIf="row.info.sent==false" style="border: 1px solid #FC7476"><input type="checkbox" aria-label="" class="checked"></td>
+        <td *ngIf="row.info.sent==true" style="border: 1px solid #FC7476"><input type="checkbox" aria-label="" checked  class="checked"></td>
+        <p class="edit" routerLink="/edit" style="color: #BC0D16; padding-top: 25px"> edit draft</p>
       </tr>
 
       </tbody>
     </table>
+
+
+
   </div>
 
 </div>

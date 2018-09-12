@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -36,8 +36,7 @@
 
   <div class="buttons">
     <p><i class="far fa-save"></i>&#160;&#160;&#160;<a class="quote" routerLink="/myQuotes">My Quotes</a></p>
-    <p class="newQuote">New Quote</p>
-    <div class="card" style="width: 38rem;">
+    <div class="card" style="width: 38rem;margin-top: 5%">
       <div class="card-body">
         <h5 class="card-title">Customer information</h5>
         <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
@@ -47,15 +46,15 @@
         <!--<div class="card-text">Email: <input type="text" class="input"></div>-->
         <table>
           <tr class="card-text">
-            <td>Client name:</td>
+            <td>Client Name:</td>
             <td> <input type="text" class="input"></td>
           </tr>
           <tr class="card-text">
-            <td>Company name:</td>
+            <td>Company Name:</td>
             <td> <input type="text" class="input"></td>
           </tr>
           <tr class="card-text">
-            <td>Contact number:</td>
+            <td>Contact Number:</td>
             <td> <input type="text" class="input"></td>
           </tr>
           <tr class="card-text">

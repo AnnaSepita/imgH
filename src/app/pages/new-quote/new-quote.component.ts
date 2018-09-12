@@ -14,11 +14,11 @@ export class NewQuoteComponent implements OnInit {
         {
             date: 1,
             info: {
-                name: 'john',
-                number: '5551212',
-                contactNo: 6510,
-                email: 'rgsr@gddg.com',
-                price: '43$',
+                name: 'John Smith (Burger King)',
+                number: '#02154865',
+                contactNo: '01202 555666',
+                email: 'JohnSmith@burgerking.com',
+                price: '$4390',
                 sent: true,
             }
         },

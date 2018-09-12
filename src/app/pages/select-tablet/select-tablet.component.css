@@ -12,8 +12,8 @@ header{
 }
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
 .my-4{
@@ -26,14 +26,17 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0;
+}
+input:focus{
+    padding-left: 25px;
 }
 .img{
     background: url("../../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
 }
 .form-inline{
     display: block;
@@ -42,7 +45,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 input{
     /*width: 500px;*/
@@ -93,8 +96,8 @@ i.fas .fa-search + input {
 
 /*Kiosk page*/
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 10%;
 }
 .dhbrd{
@@ -132,7 +135,7 @@ h2{
 .supplying{
     margin-top: 40px;
     height: 35px;
-    width: 320px;
+    width: 30%;
     padding-bottom: 20px;
     border-bottom: solid #3693bc 1px ;
     word-spacing: 5px;
@@ -349,6 +352,8 @@ h2{
 .fa-angle-down{
     padding-top: 5px;
     float: right;
+    color: #3293c3;
+    font-size: 19px;
 }
 .btn-dark{
     color: black;
@@ -429,7 +434,7 @@ h2{
     /*margin-bottom: 50px;*/
 }
 .fa-search::before{
-    color: steelblue;
+    color: #3293c3;
 
 }
  .search2{
@@ -438,14 +443,15 @@ h2{
     line-height: 26px;
     text-align: right;
     /*margin-right: -26px;*/
-    /*margin-left: 56px;*/
-    position: relative;
+    padding-right: 10px;
+     padding-left: 450px;
+    position: absolute;
     z-index: 1;
-    margin-top: 4px;
-
-    margin-bottom: 5px;
+    margin-top: -222px;
+     /*padding-top: -20px;*/
+    /*margin-bottom: 5px;*/
     color: #003380;
-    float: left;
+    /*float: right;*/
     -moz-transform: rotate(90deg); /* Для Firefox */
     -ms-transform: rotate(90deg); /* Для IE */
     -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
@@ -460,7 +466,8 @@ h2{
      border-radius: 0;
      font-size: 18px;
      font-weight: 700;
-    padding-left: 46px;
+    padding-left: 15px;
+     margin-top: -2px;
 }
 
 .slidecontainer {
@@ -547,7 +554,7 @@ h2{
 }
 table{
     float: right;
-    width: 75%;
+    width: 68%;
 }
 
 .info{
@@ -585,11 +592,11 @@ table{
 }
 .add{
     background-color: #3194c5;
-    height: 20px;
+    height: 25px;
     width: 90px;
     font-size: 12px;
     font-weight: 700;
-    padding-top: 0;
+    padding-top: 3px;
     margin-top: 0;
 }
 .bord{
@@ -666,3 +673,13 @@ h5{
     font-size: 11px;
     padding-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+

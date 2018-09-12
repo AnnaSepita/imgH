@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -34,8 +34,8 @@
   <h3>Dashboard</h3>
 
   <div class="buttons">
-    <p><i class="far fa-save"></i>&#160;&#160;&#160;<span class="quote" routerLink="/myQuotes">My Quotes</span></p>
-    <p><i class="fas fa-plus "></i>&#160;&#160;&#160;<span class="quote"  routerLink="/NewQuote">New Quote</span></p>
+    <p routerLink="/myQuotes" style="cursor: pointer"><span><i class="far fa-save"></i>&#160;&#160;&#160;<span class="quote">My Quotes</span></span></p>
+    <p  routerLink="/NewQuote" style="cursor: pointer"><i class="fas fa-plus "></i>&#160;&#160;&#160;<span class="quote">New Quote</span></p>
   </div>
 </div>
 

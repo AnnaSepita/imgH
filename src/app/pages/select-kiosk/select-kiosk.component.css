@@ -8,8 +8,8 @@ header{
 }
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
 .my-4{
@@ -22,14 +22,18 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0;
+}
+input:focus{
+    padding-left: 20px;
 }
 .img{
     background: url("../../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
 }
 .form-inline{
     display: block;
@@ -38,7 +42,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 input{
     /*width: 500px;*/
@@ -89,8 +93,9 @@ i.fas .fa-search + input {
 
 /*Kiosk page*/
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%;
 }
 
 
@@ -141,10 +146,52 @@ h2{
     color: #3293c3;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
 }
 .data{
     float: right;
     display: block;
+}
+.custom{
+    background: url("../../../img/custom.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+.full{
+    background: url("../../../img/full.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+.compact{
+    background: url("../../../img/compact.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+.mini{
+    background: url("../../../img/mini.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+.nano{
+    background: url("../../../img/nano.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+.enclose{
+    background: url("../../../img/enclose.png");
+    width:152px;
+    height:210px;
+    margin-left: 10px;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 14px;
 }
 .name{
     text-align: right;
@@ -193,7 +240,7 @@ h2{
     position: absolute;
     color: white;
     font-size: 12px;
-    top: 6px; /* equal to border thickness */
+    top: 5px; /* equal to border thickness */
     left: 45px; /* equal to border thickness */
     width: 176px; /* container height - (border thickness * 2) */
     height: 40px; /* container height - (border thickness * 2) */

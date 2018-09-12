@@ -18,7 +18,7 @@ import { SelectEnclosureComponent } from './pages/select-enclosure/select-enclos
 import { CustomisationsComponent } from './pages/customisations/customisations.component';
 import { QuoteConfirmationComponent } from './pages/quote-confirmation/quote-confirmation.component';
 import { KioskQuotationComponent } from './pages/kiosk-quotation/kiosk-quotation.component';
-
+// import { noUiSlider } from '../../node_modules/nouislider';
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
     { path: 'pages', component: PagesComponent},
@@ -57,6 +57,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
       OrderModule,
+     // noUiSlider,
       RouterModule.forRoot(appRoutes)
   ],
     exports: [ RouterModule ],

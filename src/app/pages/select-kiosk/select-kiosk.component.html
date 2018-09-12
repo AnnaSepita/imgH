@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -38,7 +38,7 @@
 <div class="data">
   <p class="name"><b>John Smith (Burger King)</b></p>
   <p class="name">Ref: <b>#02154865</b></p>
-  <p class="name">Unit total: <b>$4690</b></p>
+  <p class="name">Unit total: <b>£4690</b></p>
 </div>
 <div style="padding-top: 20px">
   <div class="dashb" routerLink="/pages">
@@ -58,42 +58,48 @@
 
   <div class="card-deck">
     <div class="card" routerLink="/custom">
-      <img class="card-img-top" src="../../../img/custom.png" width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top custom"  title="Card image cap"></span>
+      <!--<img src="../../../img/custom.png">-->
       <div class="card-body">
         <h5 class="card-title">Custom</h5>
         <p class="card-text">Customise your kiosk</p>
       </div>
     </div>
     <div class="card" routerLink="/fullKiosk">
-      <img class="card-img-top" src="../../../img/full.png"  width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top full"  title="Card image cap"></span>
+      <!--<img class="card-img-top" src="../../../img/full.png"  width="95px" height="119" alt="Card image cap">-->
       <div class="card-body">
         <h5 class="card-title"> Full kiosk</h5>
         <p class="card-text">Floor standing modular kiosk for larger devices.</p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="../../../img/compact.png"  width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top compact"  title="Card image cap"></span>
+      <!--<img class="card-img-top" src="../../../img/compact.png"  width="95px" height="119" alt="Card image cap">-->
       <div class="card-body">
         <h5 class="card-title">Compact Kiosk</h5>
         <p class="card-text">Modular kiosk that can hold multiple devices.</p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="../../../img/mini.png"  width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top mini"  title="Card image cap"></span>
+      <!--<img class="card-img-top" src="../../../img/mini.png"  width="95px" height="119" alt="Card image cap">-->
       <div class="card-body">
         <h5 class="card-title">Mini Kiosk</h5>
         <p class="card-text">All-in-one enclosures that can house up to 3 additional devices.</p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="../../../img/nano.png"  width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top nano"  title="Card image cap"></span>
+      <!--<img class="card-img-top" src="../../../img/nano.png"  width="95px" height="119" alt="Card image cap">-->
       <div class="card-body">
         <h5 class="card-title">Nano Kiosk</h5>
         <p class="card-text">Enclosures that can house up to 2 additional small devices.</p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="../../../img/enclose.png"  width="95px" height="119" alt="Card image cap">
+      <span class="card-img-top enclose"  title="Card image cap"></span>
+      <!--<img class="card-img-top" src="../../../img/enclose.png"  width="95px" height="119" alt="Card image cap">-->
       <div class="card-body">
         <h5 class="card-title">Enclosure</h5>
         <p class="card-text">Simply the enclosure for your tablet. No extra devices.</p>

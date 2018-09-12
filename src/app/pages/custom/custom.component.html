@@ -3,7 +3,7 @@
     <span class="img" title="imageHolders"></span>
     <!--<img src="img/1.png" class="rounded float-left">-->
     <span class="nav-item">
-      <a class="nav-link active" href="#" title="Home">Home</a>
+      <a class="nav-link active" href="#" title="Home">Dashboard</a>
     </span>
     <span class="nav-item">
       <a class="nav-link" href="#" title="My Quotes"  routerLink="/myQuotes">My Quotes</a>
@@ -13,7 +13,7 @@
     </span>
     <form class="form-inline my-2 my-lg-0">
       <p style="font-size: 11px; padding-top: 8px; float: right">
-        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm">Sign out</button>
+        Logged in as <b><i>John Black</i></b> <button type="button" class="btn btn-primary btn-sm" routerLink="">Sign out</button>
       </p>
       <p>
         <i class="fas fa-search"  aria-hidden="true"></i>
@@ -38,9 +38,22 @@
 <div class="data">
   <p class="name"><b>John Smith (Burger King)</b></p>
   <p class="name">Ref: <b>#02154865</b></p>
-  <p class="name">Unit total: <b>$4690</b></p>
+  <p class="name">Unit total: <b>£4690</b></p>
 </div>
-<div>Dashboard</div>
+<div style="padding-top: 20px">
+  <div class="dashb" routerLink="/pages">
+    <div class="dashb1">Dashboard</div>
+
+  </div>
+  <div class="kiosk1">
+    <div class="kiosk2">Select Kiosk</div>
+  </div>
+  <div class="comp1">
+    <div class="comp2">Select Components</div>
+  </div>
+
+</div>
+
 <div>
   <h2>Select Components</h2>
   <p><span class="oblig">*</span>Selection cannot be left empty</p>
