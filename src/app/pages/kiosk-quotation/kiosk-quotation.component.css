@@ -4,43 +4,52 @@ header{
     padding-left: 50px;
 }
 .img{
-    background: url("../../../img/1.jpg");
-    height: 46px;
-    width: 196px;
-    margin-top: 28px;
+    background: url("../../../img/1.png");
+    width: 258px;
+    height: 60px;
     margin-bottom: 10px;
 }
 .nav{
     /*padding-left: 50px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-bottom: 2px solid lightgray;
 }
+p{
+    line-height: 17px;
+}
+
 .kiosk {
     height: 20px;
     font-size: 16px;
-    padding-top: 56px;
-    float: right;
+    margin-left: auto;
+    margin-right: 0;
+
+    padding-top: 40px;
+    /*float: right;*/
     font-weight: 700;
 
 }
-.quo{
-    width: 80%;
 
-}
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 10%;
 }
 .text{
-    width: 58%;
+    width: 55%;
 }
 
 .summarInfo{
     border: 1px solid #3293c3;
-    padding: 5px;
-    padding-left: 60px;
+    padding: 14px;
+    padding-left: 50px;
+}
+.memb{
+    background: url("../../../img/member.png");
+    height: 138px;
+    width: 260px;
+    margin-left: 30px;
 }
 td{
     padding-left: 15px;
@@ -49,10 +58,13 @@ td{
 }
 table{
 
-    width: 100%;
+    width: 138%;
     margin-bottom: 5%;
 
 
+}
+.col-sm-6{
+    margin-left: 10%;
 }
 .title{
     color:  #3693bc;
@@ -97,6 +109,7 @@ table{
     margin-left: 32%;
     height: 40px;
 }
+
 .titl2{
     text-align: center;
     background: url("../../../img/flag1.png");
@@ -121,17 +134,17 @@ table{
     text-align: center;
 }
 .text2{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: white;
-    width: 45%;
+    width: 50%;
     display: inline-block;
     text-align: left;
 }
 .row2{
     padding-top: 5%;
-    padding-left: 10%;
-    width: 90%;
+    padding-left: 6%;
+    width: 100%;
 
     color: white;
 }
@@ -142,10 +155,13 @@ table{
     border-bottom: 1px solid white;
 }
 .sm1{
-    width: 45%;
-    margin-left: 20px;
+    width: 45.5%;
+    margin-left: 5px;
     /*padding-right: 20%;*/
     text-align: left;
+}
+.card2{
+    display: flex;
 }
 .img3{
     background: url("../../../img/member.png");

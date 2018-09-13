@@ -450,21 +450,24 @@ tr, .confirm{
     margin-left: 15px;
 }
 .price{
-    float: right;
-    /*padding-left: 20px;*/
-    font-style: italic;
-    font-weight: 700;
+    /*float: right;*/
+    padding-left: 10px;
+
+    font-weight: 600;
     font-size: 13px;
 }
 .price1{
-    float: right;
+    /*float: right;*/
     font-weight: 600;
     color: black;
+    padding-left: 20px;
+    font-size: 15px;
 }
 .price2{
-    float: right;
+    /*float: right;*/
     font-weight: 700;
     color: black;
+    padding-left: 20px;
     font-size: 17px;
     font-style: italic;
 }
@@ -540,13 +543,14 @@ table{
     color: #3693bc;
     font-size: 12px;
     padding-left: 10%;
+    line-height: 15px;
 }
 .pr{
     font-style: italic;
     color: #3693bc;
 }
 .editrmv{
-    padding-top: 2px;
+    padding-top: 0;
     background: white;
     line-height: 2px;
     display: block;
@@ -556,6 +560,9 @@ table{
 .ed{
     line-height: 2px;
     font-weight: 700;
+}
+.btn-link:hover{
+    text-decoration: none;
 }
 .btn-block{
     padding-top: 3px;

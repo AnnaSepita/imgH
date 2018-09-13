@@ -257,12 +257,23 @@
 
         <div class="manufact">
             <div class="slidecontainer1">
-                <i class="far fa-circle circle1"></i>
-                <i class="far fa-circle circle2"></i>
-                <i class="far fa-circle circle3"></i>
-                <i class="far fa-circle circle4"></i>
-                <i class="far fa-circle circle5"></i>
-                <i class="far fa-circle circle6"></i>
+                <span *ngIf="circle11==false"><i class="far fa-circle circle1" id="circle1" (click)="circle1()"></i></span>
+                <span *ngIf="circle11==true"><i class="far fa-circle circle1" style="border: 1px solid blue" (click)="circle111()"></i></span>
+
+                <span *ngIf="circle12==false"><i class="far fa-circle circle2" (click)="circle2()"></i></span>
+                <span *ngIf="circle12==true"><i class="far fa-circle circle2" style="border: 1px solid blue" (click)="circle21()"></i></span>
+
+                <span  *ngIf="circle13==false"><i class="far fa-circle circle3"  (click)="circle3()"></i></span>
+                <span  *ngIf="circle13==true"><i class="far fa-circle circle3"  style="border: 1px solid blue"  (click)="circle31()"></i></span>
+
+                <span  *ngIf="circle14==false"><i class="far fa-circle circle4" (click)="circle4()"></i></span>
+                <span  *ngIf="circle14==true"><i class="far fa-circle circle4" style="border: 1px solid blue" (click)="circle41()"></i></span>
+
+                <span  *ngIf="circle15==false"><i class="far fa-circle circle5" (click)="circle5()"></i></span>
+                <span  *ngIf="circle15==true"><i class="far fa-circle circle5" style="border: 1px solid blue" (click)="circle51()"></i></span>
+
+                <span  *ngIf="circle16==false"><i class="far fa-circle circle6"  (click)="circle6()"></i></span>
+                <span  *ngIf="circle16==true"><i class="far fa-circle circle6" style="border: 1px solid blue" (click)="circle61()"></i></span>
             </div>
 
         </div>

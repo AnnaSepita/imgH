@@ -483,6 +483,9 @@ h2{
 .fa-circle{
     margin-right: 6px;
 }
+/*.fa-circle:focus{*/
+    /*border: 2px solid #3693bc;*/
+/*}*/
 .circle1{
     background:#cb7e7e ;
     border-radius: 40px;

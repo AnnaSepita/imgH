@@ -16,6 +16,10 @@ header{
     width: 80%;
 
 }
+i:hover, i:focus{
+    border: none;
+    cursor: pointer;
+}
 .btn-sm{
     background-color: #3194c5;
     margin-left: 15px;

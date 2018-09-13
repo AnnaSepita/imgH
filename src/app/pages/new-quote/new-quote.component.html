@@ -34,7 +34,7 @@
 <div class="dashboard">
   <h3>My Quotes</h3>
   <div>
-    <p class="plus"><i class="fas fa-plus"></i><a  routerLink="/NewQuote" style="color: black">New Quote</a></p>
+    <p class="plus" ><a class="fas fa-plus"  routerLink="/NewQuote"></a><a style="color: black"  routerLink="/NewQuote">New Quote</a></p>
 
     <form class="form-inline my-2 my-lg-0 searchpadd">
       <p>
@@ -98,7 +98,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
-        <td >{{ row.date | date : 'shortDate'}}</td>
+        <td >{{ row.date | date :'dd/mm/yyyy'}}</td>
         <td style="color:#7EA9BE;" class="namecompany" routerLink="/fullKiosk">{{ row.info.name }}</td>
         <td>{{ row.info.number }}</td>
         <td>{{ row.info.contactNo }}</td>
@@ -128,7 +128,7 @@
 
       <tbody>
       <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
-        <td style="border: 1px solid #FC7476">{{ row.date | date : 'shortDate'}}</td>
+        <td style="border: 1px solid #FC7476">{{ row.date | date : 'dd/mm/yyyy'}}</td>
         <td style="color: #BC0D16; border: 1px solid #FC7476">{{ row.info.name }}</td>
         <td style="border: 1px solid #FC7476">{{ row.info.number }}</td>
         <td style="border: 1px solid #FC7476">{{ row.info.contactNo }}</td>

@@ -161,6 +161,12 @@ table{
 .buttons{
     margin-top: 2.3%;
 }
+i:hover{
+    cursor: pointer;
+}
+a:hover{
+    cursor: pointer;
+}
 .quote{
     color: black;
     font-weight: 400;
@@ -176,6 +182,13 @@ table{
 }
 .plus{
     margin-top: 1.5%;
+    border: none;
+}
+.plus:focus, .plus:active, .plus:checked{
+    border: none;
+}
+p:focus, p:active{
+    border: none;
 }
 .fa-plus{
     margin-top: 1%;

@@ -106,12 +106,12 @@
       <!--<div class="card">-->
         <div class="card-body width1">
 
-          <span style="color: #266d99; font-weight: 700">Unit Quantity </span><span class="price"
+          <span style="color: #266d99; font-weight: 700; text-align: right">Unit Quantity </span><span class="price"
           ><i class="fas fa-minus" (click)="minus()"></i>{{count}}<i class="fas fa-plus" (click)="plus()"></i>
     </span>
-          <div style="margin-top: 25px; margin-left: 20px">
-            <p class="card-text">Unit total: <span class="price1">£2345.00</span></p>
-            <p class="card-text">Sub total: <span class="price2">£2345.00</span></p>
+          <div style="margin-top: 25px; margin-left: 35px">
+            <p class="card-text"><span style="text-align: right">Unit total:</span> <span class="price1">£2345.00</span></p>
+            <p class="card-text"><span style="text-align: right; margin-left: 4px">Sub total:</span> <span class="price2">£2345.00</span></p>
 
           </div>
 
@@ -125,9 +125,9 @@
   <table>
 
     <tr class="title">
-      <td style="padding-left: 25px">Component</td>
-      <td style="padding-left: 25px">Selection</td>
-      <td style="padding-left: 25px; border-right: 1px solid lightgrey">Price</td>
+      <td style="text-align: center">Component</td>
+      <td style="text-align: center">Selection</td>
+      <td style="text-align: center; border-right: 1px solid lightgrey">Price</td>
     </tr>
     <tr>
       <td class="body" style="padding-left: 25px;">Tablet</td>

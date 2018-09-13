@@ -12,6 +12,12 @@ export class SelectTabletComponent implements OnInit {
     slider1 = 17;
     slider2 = 22;
     slider3 = 77;
+    circle11 = false;
+    circle12 = false;
+    circle13 = false;
+    circle14 = false;
+    circle15 = false;
+    circle16 = false;
   constructor() {
     this.specification = true;
     this.check = false;
@@ -61,5 +67,41 @@ export class SelectTabletComponent implements OnInit {
     }
     no() {
         this.check = false;
+    }
+  circle1() {
+      this.circle11 = true;
+  }
+    circle111() {
+        this.circle11 = false;
+    }
+    circle2()  {
+        this.circle12 = true;
+    }
+    circle21()  {
+        this.circle12 = false;
+    }
+    circle3()  {
+        this.circle13 = true;
+    }
+    circle31()  {
+        this.circle13 = false;
+    }
+    circle4()  {
+        this.circle14 = true;
+    }
+    circle41()  {
+        this.circle14 = false;
+    }
+    circle5()  {
+        this.circle15 = true;
+    }
+    circle51()  {
+        this.circle15 = false;
+    }
+    circle6()  {
+        this.circle16 = true;
+    }
+    circle61()  {
+        this.circle16 = false;
     }
 }
