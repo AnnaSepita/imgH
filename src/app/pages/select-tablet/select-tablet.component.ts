@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { noUiSlider } from '../../../../node_modules/nouislider';
+
 @Component({
   selector: 'app-select-tablet',
   templateUrl: './select-tablet.component.html',
@@ -8,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SelectTabletComponent implements OnInit {
     specification: boolean;
     check: boolean;
-    slider;
+    slider = 9;
+    slider1 = 17;
+    slider2 = 22;
+    slider3 = 77;
   constructor() {
     this.specification = true;
     this.check = false;
   }
 
   ngOnInit() {
-       this.slider = document.getElementById('slider');
-      //
       // noUiSlider.create(this.slider, {
       //     start: [20, 80],
       //     connect: true,
@@ -27,6 +28,26 @@ export class SelectTabletComponent implements OnInit {
       // });
   }
 
+  range(count) {
+      console.log(count.srcElement.value);
+      console.log(count.value);
+      this.slider = count.srcElement.value;
+  }
+    range1(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider1 = count.srcElement.value;
+    }
+    range2(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider2 = count.srcElement.value;
+    }
+    range3(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider3 = count.srcElement.value;
+    }
   specifications() {
     this.specification = false;
     // document.getElementById('card1').style.display = 'none';
@@ -41,5 +62,4 @@ export class SelectTabletComponent implements OnInit {
     no() {
         this.check = false;
     }
-
 }

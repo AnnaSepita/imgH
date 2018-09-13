@@ -138,9 +138,12 @@ a .carousel-control-prev{
 .card-header{
     border: 1px solid lightgrey;
     font-weight: 700;
+    padding: 0;
+
     background: white;
 }
 .card-body{
+    padding: 5px;
     border: 1px solid lightgrey;
 }
 a .gnQuote{
@@ -148,6 +151,8 @@ a .gnQuote{
 }
 .btn-block{
     padding-top: 3px;
+    background-color:#246d92;
+    border: 1px #246d92;
 }
 .blockquote-footer{
     color: #3693bc;
@@ -174,6 +179,8 @@ a .gnQuote{
     margin-bottom: 20%;
     margin-left: 50%;
     padding-top: 3px;
+    background-color: #246d92;
+    border: 1px #246d92;
 }
 .fa-minus, .fa-plus {
     background-color: #3693bc;
@@ -182,18 +189,19 @@ a .gnQuote{
     margin-right: 10px;
     margin-left: 10px;
     padding: 4px;
-
     border-radius: 30px;
 }
 .price{
-    padding-left: 50px;
+    float: right;
+    /*padding-left: 90px;*/
     font-style: italic;
     font-weight: 700;
     font-size: 14px;
+
 }
 
 .card-text{
-
+    padding: 0;
     font-weight: 700;
 }
 .btn-link{

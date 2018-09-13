@@ -64,11 +64,19 @@
   <div>Supplying own tablet?
 
 
-    <span class="answer">Yes <input class="radio" name="radio"  type="radio" (click)="yes()">
-        &#160;&#160;  No <input class="radio" name="radio"  type="radio" (click)="no()" checked></span>
+      <label  (click)="yes()"  style="margin-left: 20px">
+          Yes
+          <input class="radio" type="radio" name="radio-test">
+          <span class="radio-custom"></span>
+          <span class="label"></span>
+      </label>
 
-
-
+      <label  (click)="no()" style="margin-left: 20px">
+          No
+          <input class="radio" type="radio" name="radio-test">
+          <span class="radio-custom"></span>
+          <span class="label"></span>
+      </label>
   </div>
 
 </div>
@@ -229,13 +237,10 @@
 
         <div class="manufact">
             <div class="slidecontainer">
-                <input title="Range" type="range" multiple  min="8" max="20" value="8" class="slider" id="myRange" />
-                <p> <span id="demo">''</span></p>
+                <input type="range" multiple  min="8" max="14" value="3,14" class="slider" id="myRange" ngModel="slider" (change)="range($event)"/>
+                <input type="range" multiple  min="15" max="20" value="14,25" class="slider" id="myRange2"  (change)="range1($event)" />
+                <p> <span id="demo">{{slider}}''</span> <span style="float: right">{{slider1}}''</span></p>
             </div>
-
-
-
-
             <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
         </div>
 
@@ -243,12 +248,10 @@
 
         <div class="manufact">
             <div class="slidecontainer">
-                <input title="Range" type="range" multiple  min="8" max="128" value="8" class="slider" id="myRange1" />
-
-                <p> <span id="demo1">''</span></p>
+                <input type="range" multiple  min="8" max="60" value="5,60" class="slider" id="myRange1" (change)="range2($event)"/> <input type="range" multiple  min="61" max="128" value="61,130" class="slider" (change)="range3($event)" id="myRange3" />
+                <p> <span id="demo1">{{slider2}}GB</span> <span style="float: right">{{slider3}}GB</span></p>
             </div>
-            <div id="slider"></div>
-            <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
+
         </div>
         <p class="manufacturer">  &#160;Colour</p>
 
@@ -261,7 +264,7 @@
                 <i class="far fa-circle circle5"></i>
                 <i class="far fa-circle circle6"></i>
             </div>
-            <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
+
         </div>
 
     </div>
@@ -433,8 +436,9 @@
             </div>
 
         </td>
-        <td class="priceNew1 bord">$133.00</td>
+        <td class="priceNew1 bord">£133.00</td>
         <button type="button" class="btn btn-primary add" routerLink="/selectCustomisations">Add</button>
     </tr>
 </table>
+
 </body>

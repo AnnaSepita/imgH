@@ -135,7 +135,7 @@ h2{
 .supplying{
     margin-top: 40px;
     height: 35px;
-    width: 30%;
+    width: 27%;
     padding-bottom: 20px;
     border-bottom: solid #3693bc 1px ;
     word-spacing: 5px;
@@ -472,7 +472,8 @@ h2{
 
 .slidecontainer {
     margin-left: 15%;
-    width: 65%;
+    width: 70%;
+    display: inline-block;
 }
 .slidecontainer1{
     margin-left: 15%;
@@ -512,7 +513,7 @@ h2{
 }
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 50%;
     height: 2px;
     border-radius: 5px;
     border-color: black;
@@ -521,6 +522,7 @@ h2{
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    display: inline-block;
 }
 
 .slider:hover {
@@ -554,12 +556,12 @@ h2{
 }
 table{
     float: right;
-    width: 68%;
+    width: 72%;
 }
 
 .info{
     color: white;
-    padding: 1px 11px;
+    padding: 1px 9px;
     margin-top: -5px;
     margin-left: 5px;
     border-radius: 30px;
@@ -567,7 +569,7 @@ table{
     font-size: 15px;
     font-weight: 700;
     text-align: center;
-    background-color:  #3693bc;
+    background-color:  #246d92;
 }
 .priceNew{
     color: #3293c3;
@@ -712,6 +714,48 @@ h5{
     height: 15px;
     background: url('../../../img/2.jpg');     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
     border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+/*.checkbox,*/
+.radio {
+    display: none;
+}
+/*.checkbox-custom,*/
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #246d92;
+    border-radius: 3px;
+    position: relative;
+}
+/*.checkbox-custom,*/
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*.checkbox:checked + .checkbox-custom::before,*/
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #246d92;
+    border-radius: 2px;
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
 }
 
 
