@@ -18,7 +18,7 @@ export class NewQuoteComponent implements OnInit {
                 number: '#02154865',
                 contactNo: '01202 555666',
                 email: 'JohnSmith@burgerking.com',
-                price: '$4390',
+                price: '£4390',
                 sent: true,
             }
         },
@@ -29,7 +29,7 @@ export class NewQuoteComponent implements OnInit {
                 number: '2551212',
                 contactNo: 10443,
                 email: 'rgsr@gddg.com',
-                price: '63$',
+                price: '£63',
                 sent: false,
             }
         },
