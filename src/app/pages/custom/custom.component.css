@@ -117,7 +117,8 @@ table{
 
 }
 .btn-block{
-    padding-top: 5px;
+    padding-top: 4px;
+    background-color:#3194c5;
 }
 .suggest{
     float: right;
