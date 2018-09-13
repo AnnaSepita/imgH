@@ -101,6 +101,7 @@ h2{
 }
 .kiosk{
     margin-top: 5%;
+    width: 100%;
 }
 .oblig{
     color: red;
@@ -112,8 +113,8 @@ h2{
     width: 77%;
 }
 table{
-    margin-left: 8%;
-    width: 100%;
+    margin-left: 12%;
+    width: 110%;
     margin-bottom: 5%;
 
 }
@@ -160,6 +161,7 @@ a .gnQuote{
     padding-left: 10%;
 }
 .bd{
+    width: 100%;
     border-radius: 12px;
     border: 2px solid #3693bc;
     color: #3693bc;

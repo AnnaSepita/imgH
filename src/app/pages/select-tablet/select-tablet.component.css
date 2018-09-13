@@ -217,6 +217,7 @@ h2{
     clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
     -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
 }
+
 .modal-dialog{
     border: 1px solid #3693bc;
     padding: 10px;
@@ -226,8 +227,9 @@ h2{
     height: 450px;
     left: 40%;
     top: 25%;
+    border-top-right-radius: 20px;
     background: white;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin-right: 12px;
     -webkit-clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
     clip-path: polygon(50% 10%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
@@ -238,6 +240,7 @@ h2{
     /*-moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);*/
 }
 .modal-content{
+
     padding-right: 0;
     border-color: white;
     position: absolute;
@@ -625,14 +628,19 @@ table{
     margin-left: -20px;
     font-size: 12px;
     background-color: #3693c1;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-bottom: 15%;
 }
 .info1{
-    float: right;
+    /*float: right;*/
     line-height: 9px;
-    padding-right: 20%;
     text-align: left;
+    padding-left: 70px;
+}
+.inf{
+    line-height: 9px;
+    text-align: left;
+    padding-left: 350px;
 }
 .line1{
     line-height: 9px;
@@ -640,6 +648,7 @@ table{
 }
 .btnPadding1{
     border-radius: 0;
+    border-top-right-radius: 8px;
     float: right;
     /*padding-top: -90px;*/
     margin-top: -35px;

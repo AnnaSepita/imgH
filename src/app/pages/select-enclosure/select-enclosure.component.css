@@ -27,14 +27,14 @@ header{
     font-size: 11px;
 }
 .my-lg-0{
-    margin-left: 26%;
+    margin-left: auto;
+    margin-right: 0;
 }
 .img{
     background: url("../../../img/1.png");
-    width: 160px;
-    height: 39px;
-    margin-top: 28px;
-    margin-bottom: 10px;
+    width: 258px;
+    height: 60px;
+    margin-top: 10px;
 }
 .form-inline{
     display: block;
@@ -354,6 +354,8 @@ h2{
 .fa-angle-down{
     padding-top: 5px;
     float: right;
+    color: #3293c3;
+    font-size: 19px;
 }
 .btn-dark{
     color: black;
@@ -443,14 +445,15 @@ h2{
     line-height: 26px;
     text-align: right;
     /*margin-right: -26px;*/
-    /*margin-left: 56px;*/
-    position: relative;
+    padding-right: 10px;
+    padding-left: 450px;
+    position: absolute;
     z-index: 1;
-    margin-top: 4px;
-
-    margin-bottom: 5px;
+    margin-top: -222px;
+    /*padding-top: -20px;*/
+    /*margin-bottom: 5px;*/
     color: #003380;
-    float: left;
+    /*float: right;*/
     -moz-transform: rotate(90deg); /* Для Firefox */
     -ms-transform: rotate(90deg); /* Для IE */
     -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
@@ -465,12 +468,14 @@ h2{
     border-radius: 0;
     font-size: 18px;
     font-weight: 700;
-    padding-left: 46px;
+    padding-left: 15px;
+    margin-top: -2px;
 }
 
 .slidecontainer {
     margin-left: 15%;
-    width: 65%;
+    width: 70%;
+    display: inline-block;
 }
 .slidecontainer1{
     margin-left: 15%;
@@ -510,7 +515,7 @@ h2{
 }
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 50%;
     height: 2px;
     border-radius: 5px;
     border-color: black;
@@ -670,3 +675,42 @@ h5{
     font-size: 11px;
     padding-top: 10px;
 }
+
+
+
+/* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 1px solid #3293c3;
+    margin-left: 60px;
+    margin-top: -8px;
+
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;			 /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    background: url('../../../img/2.jpg');     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+
