@@ -40,6 +40,7 @@ i:hover, i:focus{
     display: block;
     /*margin-left: 22.7%;*/
     float: right;
+    margin-right: -10px;
 
 }
 .nav-item{

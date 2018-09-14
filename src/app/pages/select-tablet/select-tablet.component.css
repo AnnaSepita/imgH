@@ -9,6 +9,7 @@ header{
 }
 .form-inline,.mr-sm-2{
     float: right;
+
 }
 .nav{
     /*padding-left: 50px;*/
@@ -42,6 +43,7 @@ input:focus{
     display: block;
     /*margin-left: 22.7%;*/
     float: right;
+    margin-right: -10px;
 
 }
 .nav-item{
