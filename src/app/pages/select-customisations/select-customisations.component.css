@@ -190,7 +190,7 @@ header{
 
 }
 .nav-item{
-    margin-top: 45px;
+    margin-top: 40px;
 }
 input{
     /*width: 500px;*/
@@ -288,9 +288,11 @@ h2{
     border: none;
 }
 .dropdown-menu{
-    width: 230px;
+    width: 320px;
     margin-top: -45px;
     background-color: #3293c3;
+    margin-left: -1px;
+    /*padding-left: -5px;*/
 }
 .dropdown-item{
     color: white;
