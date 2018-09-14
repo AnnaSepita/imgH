@@ -64,7 +64,14 @@
   <div>Supplying own tablet?
 
 
-      <label  (click)="yes()"  style="margin-left: 20px">
+      <!--<label  (click)="yes()"  style="margin-left: 20px">-->
+          <!--Yes-->
+          <!--<input class="radio" type="radio" name="radio-test">-->
+          <!--<span class="radio-custom"></span>-->
+          <!--<span class="label"></span>-->
+      <!--</label>-->
+
+      <label  (click)="yes()" style="margin-left: 20px">
           Yes
           <input class="radio" type="radio" name="radio-test">
           <span class="radio-custom"></span>
@@ -308,7 +315,21 @@
                         <div id="card1" *ngIf="specification==true">
                             <h5 class="accer">Accer Iconia A200 10'' 8GB</h5>
                             <img width="240px" height="130px">
-                            <p class="desc">Accer Iconia A200 10'' 8GB Tablet</p>
+                            <p class="desc">The Acer Iconia One 10 B3-A40 10.1"
+                                Tablet lets you maintain a strong and
+                                consistent wireless signal with built-in
+                                AC WiFi. You can also use Bluetooth
+                                technology to connect wirelessly to your
+                                other devices, and with two micro USB
+                                ports you can also create wired
+                                connections to your peripherals
+
+                                Powered by Android 7.0, you can enjoy
+                                expanded features and advanced
+                                functionality for a complete computing
+                                experience on the go.
+
+                            </p>
                         </div>
                         <div *ngIf="specification==false">
                             <div class="about">
@@ -394,19 +415,7 @@
                         <div *ngIf="specification==true">
                             <h5 class="accer">OWNER Acer Iconia A200 10.1'' 8GB</h5>
                             <img width="240px" height="130px">
-                            <p class="desc">The Acer Iconia One 10 B3-A40 10.1"
-                                Tablet lets you maintain a strong and
-                                consistent wireless signal with built-in
-                                AC WiFi. You can also use Bluetooth
-                                technology to connect wirelessly to your
-                                other devices, and with two micro USB
-                                ports you can also create wired
-                                connections to your peripherals
-
-                                Powered by Android 7.0, you can enjoy
-                                expanded features and advanced
-                                functionality for a complete computing
-                                experience on the go.</p>
+                            <p class="desc"></p>
                         </div>
                         <div *ngIf="specification==false">
                             <div class="about">

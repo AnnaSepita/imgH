@@ -136,11 +136,11 @@ h2{
 .dashb{
 
     /*clip-path: polygon(50% 0%, 0 100%, 100% 100%);*/
-    border: 1px solid white;
-    padding: 10px;
+    border-bottom: 1px solid #3693bc;
+    padding: 2.5px;
     position: relative;
     display: inline-block;
-    width: 180px;
+    width: 150px;
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
@@ -155,12 +155,16 @@ h2{
 .dashb1{
     /*border: 1px solid #000000;*/
     position: absolute;
-    color: white;
+    color: #3693bc;
     font-size: 12px;
-    top: 6px; /* equal to border thickness */
-    left: 45px; /* equal to border thickness */
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 40px;
+    border: 1px solid #3693bc;
+    top: 0; /* equal to border thickness */
+    left: 0px; /* equal to border thickness */
     width: 176px; /* container height - (border thickness * 2) */
-    height: 40px; /* container height - (border thickness * 2) */
+    height: 30px; /* container height - (border thickness * 2) */
     -webkit-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
@@ -439,17 +443,19 @@ tr, .confirm{
 .fa-minus, .fa-plus {
     background-color: #3693bc;
     color: white;
-    font-size: 11px;
+    font-size: 12px;
     margin-right: 5px;
     margin-left: 5px;
     padding: 3px;
+    padding-right: 4px;
+    padding-left: 4px;
     border-radius: 30px;
 }
-.fa-minus{
-    margin-right: 15px;
-}
+/*.fa-minus{*/
+    /*margin-right: 15px;*/
+/*}*/
 .fa-plus{
-    margin-left: 15px;
+    margin-left: 5px;
 }
 .price{
     /*float: right;*/
@@ -493,7 +499,7 @@ tr, .confirm{
 }
 .width1{
     padding-top: 10px;
-    width: 250px;
+    width: 270px;
     margin-top: 20px;
     margin-left: 50%;
     /*height: 200px;*/

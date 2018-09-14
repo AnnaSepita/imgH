@@ -13,11 +13,11 @@ header{
 .dashb{
 
     /*clip-path: polygon(50% 0%, 0 100%, 100% 100%);*/
-    border: 1px solid white;
-    padding: 10px;
+    border-bottom: 1px solid #3693bc;
+    padding: 2.5px;
     position: relative;
     display: inline-block;
-    width: 180px;
+    width: 150px;
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
@@ -32,12 +32,16 @@ header{
 .dashb1{
     /*border: 1px solid #000000;*/
     position: absolute;
-    color: white;
+    color: #3693bc;
     font-size: 12px;
-    top: 6px; /* equal to border thickness */
-    left: 45px; /* equal to border thickness */
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 40px;
+    border: 1px solid #3693bc;
+    top: 0; /* equal to border thickness */
+    left: 0px; /* equal to border thickness */
     width: 176px; /* container height - (border thickness * 2) */
-    height: 40px; /* container height - (border thickness * 2) */
+    height: 30px; /* container height - (border thickness * 2) */
     -webkit-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
@@ -337,6 +341,18 @@ table{
     font-size: 20px;
     font-weight: 800;
 }
+.name3{
+    color: lightblue;
+    /*padding-bottom: 10px;*/
+    font-size: 20px;
+    font-weight: 800;
+}
+.name2{
+    color: lightblue;
+    /*padding-bottom: 10px;*/
+    font-size: 20px;
+    font-weight: 800;
+}
 tr, .confirm{
     margin-top: 20px;
 }
@@ -347,6 +363,17 @@ tr, .confirm{
 }
 .confirm{
     background-color: #3693bc;
+    margin-left: 12%;
+    height: 35px;
+    padding-top: 3px;
+    width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.confirm1{
+    margin-top: 20px;
+    background-color: lightblue;
+    border: 1px solid lightblue;
     margin-left: 12%;
     height: 35px;
     padding-top: 3px;

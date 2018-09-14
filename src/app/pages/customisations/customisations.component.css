@@ -129,15 +129,14 @@ h2{
 .name{
     color: #3693bc;
 }
-
 .dashb{
 
     /*clip-path: polygon(50% 0%, 0 100%, 100% 100%);*/
-    border: 1px solid white;
-    padding: 10px;
+    border-bottom: 1px solid #3693bc;
+    padding: 2.5px;
     position: relative;
     display: inline-block;
-    width: 180px;
+    width: 150px;
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
@@ -152,12 +151,16 @@ h2{
 .dashb1{
     /*border: 1px solid #000000;*/
     position: absolute;
-    color: white;
+    color: #3693bc;
     font-size: 12px;
-    top: 6px; /* equal to border thickness */
-    left: 45px; /* equal to border thickness */
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 40px;
+    border: 1px solid #3693bc;
+    top: 0; /* equal to border thickness */
+    left: 0px; /* equal to border thickness */
     width: 176px; /* container height - (border thickness * 2) */
-    height: 40px; /* container height - (border thickness * 2) */
+    height: 30px; /* container height - (border thickness * 2) */
     -webkit-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
@@ -349,7 +352,7 @@ input:focus{
     padding-left: 25px;
 }
 .dropdown-menu{
-    width: 270px;
+    width: 290px;
     /*margin-top: 345px;*/
     color: white;
     background-color: #3293c3;
@@ -393,8 +396,8 @@ input:focus{
 }
 .dropdown-item{
     color: white;
-    font-size: 16px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 9px;
 }
 .dropdown-item:hover{
     background-color: #3293c3;

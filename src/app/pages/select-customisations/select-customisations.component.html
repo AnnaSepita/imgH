@@ -67,16 +67,16 @@
 <div class="kiosk">
 
 <table>
-  <tr>
+  <tr *ngIf="open2 == false">
     <td class="name1">Colour</td>
     <td>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="select1()">
           <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
           <i class="fas fa-angle-down"></i>
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" (click)="select2()">
           <!--<a></a>-->
           <!--<div class="dropdown-divider"></div>-->
           <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -88,8 +88,56 @@
 
     </td>
   </tr>
-    <tr>
+
+
+  <tr *ngIf="open2 == true">
+    <td class="name3">Colour</td>
+    <td>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="select1()">
+          <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-menu" (click)="select2()">
+          <!--<a></a>-->
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+          <a class="dropdown-item" style="color: white">Black / Gold</a>
+          <a class="dropdown-item" style="color: white">Matte Black</a>
+          <a class="dropdown-item" style="color: white">White / Silver</a>
+        </div>
+      </div>
+
+    </td>
+  </tr>
+
+
+    <tr  *ngIf="open == false">
       <td class="name1">Wifi / Cellular</td>
+    <td>
+      <div class="btn-group">
+        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  (click)="select3()">
+          <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-menu"  (click)="select4()">
+          <!--<a></a>-->
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+          <a class="dropdown-item" style="color: white">Wifi Only</a>
+          <a class="dropdown-item" style="color: white">Wifi & Cellular</a>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk"  *ngIf="open2 == false">Confirm</button>
+      <button type="button" class="btn btn-primary confirm1" routerLink="/fullKiosk"  *ngIf="open2 == true">Confirm</button>
+    </td>
+  </tr>
+
+
+  <tr *ngIf="open == true">
+    <td class="name2">Wifi / Cellular</td>
     <td>
       <div class="btn-group">
         <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,9 +153,11 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk">Confirm</button>
+      <button type="button" class="btn btn-primary confirm1" routerLink="/fullKiosk">Confirm</button>
     </td>
   </tr>
+
+
 </table>
 
 </div>
