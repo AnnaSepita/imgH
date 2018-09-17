@@ -18,6 +18,7 @@ import { SelectEnclosureComponent } from './pages/select-enclosure/select-enclos
 import { CustomisationsComponent } from './pages/customisations/customisations.component';
 import { QuoteConfirmationComponent } from './pages/quote-confirmation/quote-confirmation.component';
 import { KioskQuotationComponent } from './pages/kiosk-quotation/kiosk-quotation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { noUiSlider } from '../../node_modules/nouislider';
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
       OrderModule,
+      BrowserAnimationsModule,
      // noUiSlider,
       RouterModule.forRoot(appRoutes)
   ],

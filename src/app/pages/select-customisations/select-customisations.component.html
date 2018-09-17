@@ -72,11 +72,12 @@
     <td>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="select1()">
+        <button type="button" class="btn btn-light " data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" (click)="select1()">
           <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
-          <i class="fas fa-angle-down"></i>
+          <i class="fas fa-angle-down" (click)="openDropMenu()"></i>
         </button>
-        <div class="dropdown-menu" (click)="select2()">
+        <div class="dropdown-menu" (click)="select2()" *ngIf="menu == true" [@goals]>
           <!--<a></a>-->
           <!--<div class="dropdown-divider"></div>-->
           <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -144,7 +145,7 @@
           <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
           <i class="fas fa-angle-down"></i>
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" id="addd">
           <!--<a></a>-->
           <!--<div class="dropdown-divider"></div>-->
           <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -161,5 +162,25 @@
 </table>
 
 </div>
+<script>
+    $( function() {
+        $( "#addd" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "explode",
+                duration: 1000
+            },
+            hide: {
+                effect: "blind",
+                duration: 1000
+            }
+        });
+        $( "#pencil0" ).on( "click", function() {
+            $( "#addd" ).dialog( "open" );
+        });
+    } )
 
+    // openmore();
+
+</script>
 </body>

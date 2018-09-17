@@ -317,34 +317,35 @@ a .gnQuote{
     -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
 }
 .kiosk1{
-    border: 1px solid white;
+    border: 1px solid #3693bc;
     padding: 0px;
     position: relative;
     display: inline-block;
     width: 180px;
     height: 30px;
     background: #3693bc;
-    box-sizing: border-box;
-    margin-right: 12px;
-    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
-    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
-    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    /*box-sizing: border-box;*/
+    /*margin-right: 12px;*/
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
 }
 .kiosk1:hover, .comp1:hover, .tabl1:hover{
     cursor: pointer;
 }
 .kiosk2{
-    border-color: black;
+    border: 1px solid #3693bc;
     position: absolute;
-    color: white;
+    color: #3693bc;
+    background-color: white;
     font-size: 12px;
-    top: 5px; /* equal to border thickness */
-    left: 55px; /* equal to border thickness */
-    width: 176px; /* container height - (border thickness * 2) */
-    height: 40px; /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
-    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
-    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 0% 50%);
+    padding-left: 55px;
+    padding-top: 4px;
+    top: -1px; /* equal to border thickness */
+    left: 0; /* equal to border thickness */
+    width: 177px; /* container height - (border thickness * 2) */
+    height: 30px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
 
 }
 .comp1{
@@ -354,12 +355,12 @@ a .gnQuote{
     display: inline-block;
     width: 180px;
     height: 30px;
+    margin-left: 15px;
     background: #3693bc;
     box-sizing: border-box;
     margin-right: 12px;
-    -webkit-clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
-    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
-    -moz-clip-path:polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 13% 50%);
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
 }
 .comp{
     border-color: black;
