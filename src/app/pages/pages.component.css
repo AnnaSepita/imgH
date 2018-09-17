@@ -151,3 +151,10 @@ input:focus{
 p:active, p:focus{
     border: none;
 }
+
+.nav-link{
+    color: blue;
+}
+.nav-link:hover{
+    color: #266d99;
+}
