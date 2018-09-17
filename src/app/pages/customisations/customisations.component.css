@@ -385,6 +385,9 @@ input:focus{
     border: none;
     font-size: 11px;
 }
+.btn-outline-primary:hover
+{color:black;
+}
 .color2{
     width: 65px;
     padding-left: 25px;
