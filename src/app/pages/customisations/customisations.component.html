@@ -31,7 +31,7 @@
 
   <!--<hr class="my-4">-->
 </header>
-<body>
+<body (click)="opn()">
 <!--<span class="dhbrd">-->
 <!--Dashboard-->
 <!--</span>-->
@@ -67,18 +67,49 @@
 <div class="kiosk">
 
   <table>
-    <tr>
+    <tr *ngIf="open2 == false && open3 == false && open4 == false">
       <td class="name1">Basel Material</td>
       <td>
 
         <div class="btn-group">
-          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="menu1()">
             <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
             <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu" style="margin-top: 340px">
-            <!--<a></a>-->
-            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white" (click)="opn()"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white">CORE PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">EXPO PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">INTEGRATOR PRO PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">INTEGRATOR PRO Steel</a>
+            <a class="dropdown-item" style="color: white">LOXO Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">SHELL (upto 12'' PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">SHELL Steel</a>
+            <a class="dropdown-item" style="color: white">SUMLINE Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">SUMLINE PMMA (Acrylic)</a>
+            <a class="dropdown-item" style="color: white">SUMLINE Steel</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom PMMA Acrylic</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom Glass Filed Polycarbonate</a>
+            <a class="dropdown-item" style="color: white">Unknown Custom Steel</a>
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+
+
+
+    <tr *ngIf="open2 == true || open3 == true || open4 == true">
+      <td class="name4">Basel Material</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="menu1()">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu" style="margin-top: 340px">
             <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
             <a class="dropdown-item" style="color: white">CORE PMMA (Acrylic)</a>
             <a class="dropdown-item" style="color: white">EXPO PMMA (Acrylic)</a>
@@ -99,8 +130,39 @@
       </td>
     </tr>
 
-    <tr>
+    <tr  *ngIf="open1 == false && open3 == false && open4 == false">
       <td class="name1">Colour & Finish</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="menu2()">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu" style="margin-top: 380px">
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white;font-size: 16px;">White Standard</a>
+            <a class="dropdown-item" style="color: white;font-size: 16px;">Black Standard</a>
+            <p class="padding" style="margin-top: 10px">
+              <span>Custom ...</span>
+              <span style="float: right; font-style: italic">£300</span>
+            </p>
+            <p class="padding">
+              <span style="font-size: 11px; font-style: italic">Her Colour Code</span><br>
+              <span class="color">#000000</span><span class="color2"></span>
+              <span><button type="button" class="btn btn-outline-primary">Confirm</button></span>
+            </p>
+            <!--<a class="dropdown-item" style="color: white">White / Silver</a>-->
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+
+
+    <tr *ngIf="open1 == true || open3 == true || open4 == true">
+      <td class="name4">Colour & Finish</td>
       <td>
 
         <div class="btn-group">
@@ -131,8 +193,34 @@
     </tr>
 
 
-    <tr>
+
+
+    <tr *ngIf="open1 == false && open2 == false && open4 == false">
       <td class="name1">Custom Bezel Graphics</td>
+      <td>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="menu3()">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu" style="margin-top: -30px">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white" (click)="opn()"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+          </div>
+        </div>
+
+      </td>
+    </tr>
+
+
+
+    <tr  *ngIf="open1 == true || open2 == true || open4 == true">
+      <td class="name4">Custom Bezel Graphics</td>
       <td>
 
         <div class="btn-group">
@@ -140,7 +228,7 @@
             <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
             <i class="fas fa-angle-down"></i>
           </button>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu" style="margin-top: -150px">
             <!--<a></a>-->
             <!--<div class="dropdown-divider"></div>-->
             <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -153,18 +241,20 @@
       </td>
     </tr>
 
-    <tr>
+
+
+    <tr  *ngIf="open1 == false && open3 == false && open2 == false">
       <td class="name1">Bezel Shape Expo</td>
       <td>
         <div class="btn-group">
-          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="menu4()">
             <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
             <i class="fas fa-angle-down"></i>
           </button>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu" style="margin-top: -30px">
             <!--<a></a>-->
             <!--<div class="dropdown-divider"></div>-->
-            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item item1" style="color: white" (click)="opn()"> <i class="fas fa-angle-up"></i></a>
             <a class="dropdown-item" style="color: white"></a>
             <a class="dropdown-item" style="color: white"></a>
           </div>
@@ -173,6 +263,38 @@
         <button type="button" class="btn btn-primary confirm" routerLink="/fullKiosk">Confirm</button>
       </td>
     </tr>
+
+
+
+
+
+
+
+
+
+    <tr  *ngIf="open1 == true || open2 == true || open3 == true">
+      <td class="name4">Bezel Shape Expo</td>
+      <td>
+        <div class="btn-group">
+          <button type="button" class="btn btn-light " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i  style="color: lightgrey; font-style: italic; font-size: 12px" class="option">Choose Option</i>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <!--<a></a>-->
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
+            <a class="dropdown-item" style="color: white"></a>
+            <a class="dropdown-item" style="color: white"></a>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary confirm1" routerLink="/fullKiosk">Confirm</button>
+      </td>
+    </tr>
+
+
+
   </table>
 
 </div>

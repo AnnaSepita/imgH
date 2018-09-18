@@ -30,11 +30,7 @@
 
   <!--<hr class="my-4">-->
 </header>
-<body>
-<!--<span class="dhbrd">-->
-<!--Dashboard-->
-<!--</span>-->
-<!--<span class="menuUp"></span>-->
+<body  (click)="select6()">
 <div class="data">
   <p class="name"><b>John Smith (Burger King)</b></p>
   <p class="name">Ref: <b>#02154865</b></p>
@@ -77,7 +73,7 @@
           <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
           <i class="fas fa-angle-down" (click)="openDropMenu()"></i>
         </button>
-        <div class="dropdown-menu" (click)="select2()" *ngIf="menu == true" [@goals]>
+        <div class="dropdown-menu" (click)="select2()" *ngIf="menu == true">
           <!--<a></a>-->
           <!--<div class="dropdown-divider"></div>-->
           <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -145,7 +141,7 @@
           <i  style="color: grey; font-style: italic; font-size: 13px" class="option">Choose Option</i>
           <i class="fas fa-angle-down"></i>
         </button>
-        <div class="dropdown-menu" id="addd">
+        <div class="dropdown-menu">
           <!--<a></a>-->
           <!--<div class="dropdown-divider"></div>-->
           <a class="dropdown-item item1" style="color: white"> <i class="fas fa-angle-up"></i></a>
@@ -162,25 +158,5 @@
 </table>
 
 </div>
-<script>
-    $( function() {
-        $( "#addd" ).dialog({
-            autoOpen: false,
-            show: {
-                effect: "explode",
-                duration: 1000
-            },
-            hide: {
-                effect: "blind",
-                duration: 1000
-            }
-        });
-        $( "#pencil0" ).on( "click", function() {
-            $( "#addd" ).dialog( "open" );
-        });
-    } )
 
-    // openmore();
-
-</script>
 </body>

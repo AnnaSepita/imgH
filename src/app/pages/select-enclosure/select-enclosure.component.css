@@ -143,8 +143,8 @@ h2{
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
-    -webkit-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
-    clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
     margin-right: 12px;
 }
@@ -164,8 +164,8 @@ h2{
     left: 0px; /* equal to border thickness */
     width: 176px; /* container height - (border thickness * 2) */
     height: 30px; /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
-    clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 100%, 0 0);
 }
 .kiosk1{

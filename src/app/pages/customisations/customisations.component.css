@@ -140,8 +140,8 @@ h2{
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
-    -webkit-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
-    clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
     margin-right: 12px;
 }
@@ -327,7 +327,7 @@ h2{
 }
 
 .option{
-    padding-right: 170px;
+    padding-right: 190px;
     /*width: 180px;*/
     border-bottom: 2px solid #3693bc;
     padding-bottom: 2px;
@@ -429,6 +429,12 @@ table{
     font-size: 20px;
     font-weight: 800;
 }
+.name4{
+    color: lightblue;
+    /*padding-bottom: 10px;*/
+    font-size: 20px;
+    font-weight: 800;
+}
 tr, .confirm{
     margin-top: 20px;
 }
@@ -443,6 +449,17 @@ tr, .confirm{
     height: 29px;
     padding-top: 0;
     width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.confirm1{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    margin-left: 12%;
+    height: 29px;
+    padding-top: 0;
+    width: 130px;
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 700;
 }

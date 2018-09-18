@@ -21,8 +21,8 @@ header{
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
-    -webkit-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
-    clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
     margin-right: 12px;
 }

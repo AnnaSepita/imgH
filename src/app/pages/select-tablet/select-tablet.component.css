@@ -153,8 +153,8 @@ h2{
     height: 30px;
     background: #3693bc;
     box-sizing: border-box;
-    -webkit-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
-    clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
     -moz-clip-path: polygon(83% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
     margin-right: 12px;
 }
@@ -629,6 +629,7 @@ table{
 }
 .bord{
     padding-top: 5px;
+    color: #3693bc;
     border-bottom: 1px solid #3293c3;
 }
 .btnPadding{
@@ -673,9 +674,10 @@ table{
 .btnPadding1{
     float: right;
     /*padding-top: -90px;*/
-    margin-top: -35px;
+    margin-top: -34px;
     margin-left: 27px;
     margin-right: -4px;
+    border-top-right-radius: 8px;
     /*padding-left: 0;*/
     /*padding-bottom: 14px;*/
     /*padding-right: 5px;*/
@@ -686,7 +688,6 @@ table{
     background-color: #3693c1;
     /*background-color: white;*/
     border: none;
-    border-radius: 0;
     /*color: #3293c3;*/
     /*width: 50%;*/
     /*padding-left: 20px;*/
