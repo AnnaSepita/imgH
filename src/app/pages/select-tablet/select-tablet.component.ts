@@ -5,7 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './select-tablet.component.html',
   styleUrls: ['./select-tablet.component.css']
 })
+
 export class SelectTabletComponent implements OnInit {
+    // value = 100;
+    // options: Options = {
+    //     floor: 0,
+    //     ceil: 200
+    // };
+    // simpleSliderValue = 200;
+    // simpleSliderOptions: Options = {
+    //     floor: 0,
+    //     ceil: 500
+    // };
     specification: boolean;
     check: boolean;
     slider = 9;
@@ -18,41 +29,47 @@ export class SelectTabletComponent implements OnInit {
     circle14 = false;
     circle15 = false;
     circle16 = false;
-  constructor() {
-    this.specification = true;
-    this.check = false;
-  }
-
-  ngOnInit() {
-      // noUiSlider.create(this.slider, {
-      //     start: [20, 80],
-      //     connect: true,
-      //     range: {
-      //         'min': 0,
-      //         'max': 100
-      //     }
-      // });
-  }
-
-  range(count) {
-      console.log(count.srcElement.value);
-      console.log(count.value);
-      this.slider = count.srcElement.value;
-  }
-    range1(count) {
-        console.log(count.srcElement.value);
-        console.log(count.value);
-        this.slider1 = count.srcElement.value;
+    color;
+    rangeSliderMinValue = 8;
+    rangeSliderMaxValue = 20;
+    rangeSliderOptions = {
+        floor: 0,
+        ceil: 25,
+        // showSelectionBar: true,
+        // showTicks: true,
+        // hidePointerLabels: true,
+        hideLimitLabels: true,
+        onlyBindHandles: true,
+        boundPointerLabels: false,
+        // showOuterSelectionBars: true,
+        selectionBarGradient: {
+            from: 'white',
+            to: 'black'
+        },
+        getSelectionBarColor : (value: number): string => {
+            return 'black';
+        },
+        getPointerColor: (value: number): string => {
+            // if (value <= 3) {
+            //     return 'white';
+            // }
+            // if (value <= 6) {
+            //     return 'white';
+            // }
+            // if (value <= 9) {
+            //     return 'white';
+            // }
+            // document.querySelectorAll('ng5-slider-pointer-max').style.backgroundColor = 'green';
+            // document.getElementById('myRange2').style.width = '2px';
+            return 'black';
+        }
+    };
+    constructor() {
+        this.specification = true;
+        this.check = false;
     }
-    range2(count) {
-        console.log(count.srcElement.value);
-        console.log(count.value);
-        this.slider2 = count.srcElement.value;
-    }
-    range3(count) {
-        console.log(count.srcElement.value);
-        console.log(count.value);
-        this.slider3 = count.srcElement.value;
+    ngOnInit() {
+
     }
   specifications() {
     this.specification = false;
@@ -104,4 +121,25 @@ export class SelectTabletComponent implements OnInit {
     circle61()  {
         this.circle16 = false;
     }
+    range(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider = count.srcElement.value;
+    }
+    range1(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider1 = count.srcElement.value;
+    }
+    range2(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider2 = count.srcElement.value;
+    }
+    range3(count) {
+        console.log(count.srcElement.value);
+        console.log(count.value);
+        this.slider3 = count.srcElement.value;
+    }
 }
+

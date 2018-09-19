@@ -234,18 +234,31 @@
 
         <div class="manufact">
             <div class="slidecontainer">
-                <input type="range" multiple  min="8" max="14" value="3,14" class="slider" id="myRange" ngModel="slider" (change)="range($event)"/>
-                <input type="range" multiple  min="15" max="20" value="14,25" class="slider" id="myRange2"  (change)="range1($event)" />
+                <input type="range" multiple  min="8" max="14"  step="1" value="0,14" class="slider" id="myRange" ngModel="slider" (change)="range($event)"/>
+                <input type="range" multiple  min="15" max="20" step="1" class="slider" id="myRange2"  (change)="range1($event)" />
                 <p> <span id="demo">{{slider}}''</span> <span style="float: right">{{slider1}}''</span></p>
             </div>
+            <!--<div class="slidecontainer custom-slider">-->
+
+            <!--&lt;!&ndash;<p>Min value: <input type="text" ngModel="rangeSliderMinValue"></p>&ndash;&gt;-->
+            <!--&lt;!&ndash;<p>Max value: <input type="text" ngModel="rangeSliderMaxValue"></p>&ndash;&gt;-->
+            <!--<ng5-slider  class="ng5-slider-span ng5-slider-pointer ng5-slider-pointer-max" id="myRange2"-->
+                         <!--[(value)]="rangeSliderMinValue" [(highValue)]="rangeSliderMaxValue" [options]="rangeSliderOptions"></ng5-slider>-->
+            <!--</div>-->
+
+
             <!--<input type="range" class="custom-range range" min="0" max="9" step="0.5" id="customRange3">-->
         </div>
+
+
+
 
         <p class="manufacturer">  &#160;Storage size</p>
 
         <div class="manufact">
             <div class="slidecontainer">
-                <input type="range" multiple  min="8" max="60" value="5,60" class="slider" id="myRange1" (change)="range2($event)"/> <input type="range" multiple  min="61" max="128" value="61,130" class="slider" (change)="range3($event)" id="myRange3" />
+                <input type="range" multiple  min="8" max="60" value="5,60"  step="1" class="slider" id="myRange1" (change)="range2($event)"/>
+                <input type="range" multiple  min="61" max="128" value="61,132"  step="1" class="slider" (change)="range3($event)" id="myRange3" />
                 <p> <span id="demo1">{{slider2}}GB</span> <span style="float: right">{{slider3}}GB</span></p>
             </div>
 
@@ -387,10 +400,10 @@
     <tr>
         <td class="bord">OWNER Acer Iconia A200 10.1'' 8GB</td>
         <td class="bord">
-            <i class="info"  data-toggle="modal" data-target="#exampleModalLong">i</i>
+            <i class="info"  data-toggle="modal" data-target="#exampleModalLong1">i</i>
 
             <div class="modal fade" id="exampleModalLong1" tabindex="-1"
-                 role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                 role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <!--<div class="modal-header">-->
@@ -402,15 +415,29 @@
                                 Specifications
                             </button>
                         </h5>
-                        <div *ngIf="specification==true">
-                            <h5 class="accer">OWNER Acer Iconia A200 10.1'' 8GB</h5>
+                        <div id="card2" *ngIf="specification==true">
+                            <h5 class="accer">Accer Iconia A200 10'' 8GB</h5>
                             <img width="240px" height="130px">
-                            <p class="desc"></p>
+                            <p class="desc">The Acer Iconia One 10 B3-A40 10.1"
+                                Tablet lets you maintain a strong and
+                                consistent wireless signal with built-in
+                                AC WiFi. You can also use Bluetooth
+                                technology to connect wirelessly to your
+                                other devices, and with two micro USB
+                                ports you can also create wired
+                                connections to your peripherals
+
+                                Powered by Android 7.0, you can enjoy
+                                expanded features and advanced
+                                functionality for a complete computing
+                                experience on the go.
+
+                            </p>
                         </div>
                         <div *ngIf="specification==false">
                             <div class="about">
                                 <p class="line1"><b >Brand:</b>
-                                    <span class="info1 inf">Acer</span>
+                                    <span class="info1">Acer</span>
                                 </p>
                                 <p class="line1"><b>Weight:</b>
                                     <span class="info1">531 g</span>
@@ -418,7 +445,7 @@
                                 <p class="line1"><b>
                                     Dimensions:
                                 </b>
-                                    <span class="info1" >16.7 x 0.9 x 25.9 cm</span>
+                                    <span class="info1">16.7 x 0.9 x 25.9 cm</span>
                                 </p>
                                 <p class="line1"><b>Screen Size:</b>
                                     <span class="info1">25.654 cm</span>
@@ -448,19 +475,16 @@
 
                             </div>
                         </div>
-
-                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                        <!--<span aria-hidden="true">&times;</span>-->
-                        <!--</button>-->
-                        <!--</div>-->
                     </div>
                 </div>
             </div>
+
 
         </td>
         <td class="priceNew1 bord">£133.00</td>
         <button type="button" class="btn btn-primary add" routerLink="/selectCustomisations">Add</button>
     </tr>
 </table>
+
 
 </body>

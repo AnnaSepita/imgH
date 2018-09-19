@@ -20,6 +20,8 @@ import { QuoteConfirmationComponent } from './pages/quote-confirmation/quote-con
 import { KioskQuotationComponent } from './pages/kiosk-quotation/kiosk-quotation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { noUiSlider } from '../../node_modules/nouislider';
+import { Ng5SliderModule } from 'ng5-slider';
+import {IgxInputGroupModule, IgxSliderModule} from 'igniteui-angular';
 const appRoutes: Routes = [
     { path: '', component: LoginComponent},
     { path: 'pages', component: PagesComponent},
@@ -59,6 +61,9 @@ const appRoutes: Routes = [
     BrowserModule,
       OrderModule,
       BrowserAnimationsModule,
+      Ng5SliderModule,
+      IgxInputGroupModule,
+      IgxSliderModule,
      // noUiSlider,
       RouterModule.forRoot(appRoutes)
   ],

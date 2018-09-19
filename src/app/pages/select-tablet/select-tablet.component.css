@@ -439,6 +439,9 @@ h2{
     height: 2px;
     background: black;
 }
+.rang{
+    width: 220px;
+}
 .btn-dark{
     border-radius: 0;
     color: #000000;
@@ -550,6 +553,17 @@ label:hover, .radio-custom:hover, .label:hover, .radio:hover{
     transition: opacity .2s;
     display: inline-block;
 }
+
+/*#myRange2 {*/
+    /*!*content: '';*!*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*!*position: absolute;*!*/
+    /*!*top: 12px;*!*/
+    /*!*left: 12px;*!*/
+    /*border-radius: 4px;*/
+    /*!* background: #fff; *!*/
+/*}*/
 
 .slider:hover {
     opacity: 1;
@@ -678,6 +692,7 @@ table{
     margin-left: 27px;
     margin-right: -4px;
     border-top-right-radius: 8px;
+    border-bottom-right-radius: 0;
     /*padding-left: 0;*/
     /*padding-bottom: 14px;*/
     /*padding-right: 5px;*/
@@ -797,13 +812,3 @@ h5{
 .radio:checked + .radio-custom::before {
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
